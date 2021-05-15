@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Healthy Food</title>
+</head>
+<body>
+    <header class="p-header">
+        <div class="container">
+            <div class="p-row row">
+                <div class="logo col-4 col-lg-2">
+                    <a><img class="logo-img" src="src/img/logo.svg" alt="Logo Healthy Food"></a>
+                </div>
+                <div class="menu col-8 col-lg-10">
+                    <nav class="nav" id="nav">
+                        <ul class="nav__list">
+                            <li class="nav__list_item"><a class="nav__link" href="concept.html">Le concept</a></li>
+                            <li class="nav__list_item"><a class="nav__link" href="nospanier.html">Nos paniers</a></li>
+                            <li class="nav__list_item"><a class="nav__link" href="menu.html">Votre menu</a></li>
+                        </ul>
+                        <ul class="nav__list">
+                            <li class="nav__list_item research">
+                                <form class="research__form p-none-show p-hide">
+                                    <input type="search">
+                                    <button id="">Search</button>
+                                </form>
+                                  <div class="research__icon menu__icon">
+                                    <span class="nav__link-title ">Rechercher</span>
+                                    <svg class="menu__icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    width="155.000000pt" height="160.000000pt"
+                                     viewBox="0 0 155.000000 160.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+
+                                    <g transform="translate(0.000000,160.000000) scale(0.100000,-0.100000)" stroke="none">
+                                    <path d="M553 1199 c-61 -24 -132 -89 -164 -150 -31 -60 -38 -178 -15 -247 22
+                                    -65 93 -145 160 -179 67 -34 153 -41 230 -19 l58 17 143 -140 c148 -145 165
+                                    -156 220 -135 24 9 46 60 39 88 -3 14 -69 86 -145 161 l-140 137 22 45 c72
+                                    149 1 341 -156 414 -75 36 -171 39 -252 8z m183 -94 c86 -25 144 -105 144
+                                    -197 -1 -125 -85 -208 -211 -208 -63 0 -108 21 -153 70 -102 114 -48 295 102
+                                    340 41 12 63 11 118 -5z"/>
+                                    </g>
+                                    </svg>
+                                  </div>
+                            </li>
+                            <li class="nav__list_item">
+                                <a class="nav__link-sub" href="panier.html">
+                                    <span class="nav__link-title">Panier</span>
+                                    <svg class="menu__icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    width="155.000000pt" height="160.000000pt" viewBox="0 0 155.000000 160.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+
+                                    <g transform="translate(0.000000,160.000000) scale(0.100000,-0.100000)" stroke="none">
+                                    <path d="M560 1054 c-83 -158 -91 -178 -77 -191 9 -9 22 -13 30 -10 9 3 48 70
+                                    88 149 40 79 79 156 87 171 17 33 10 57 -16 57 -15 0 -42 -42 -112 -176z"/>
+                                    <path d="M906 1215 c-3 -9 32 -89 84 -188 67 -129 94 -173 110 -175 40 -7 33
+                                    28 -35 161 -37 72 -79 151 -92 175 -25 43 -56 55 -67 27z"/>
+                                    <path d="M355 914 c-12 -12 -15 -32 -13 -78 3 -54 6 -62 28 -73 24 -11 28 -22
+                                    44 -125 10 -62 22 -139 28 -170 l10 -58 344 0 344 0 5 23 c2 12 14 78 25 147
+                                    28 174 30 180 45 180 40 0 60 104 29 148 -12 18 -25 22 -64 22 l-49 0 11 -30
+                                    c8 -26 7 -34 -7 -50 -33 -37 -64 -22 -99 48 l-17 32 -217 0 -217 0 -25 -45
+                                    c-27 -50 -49 -62 -81 -45 -18 10 -21 18 -16 51 l5 39 -48 0 c-31 0 -54 -6 -65
+                                    -16z m233 -323 c2 -76 -1 -107 -10 -112 -28 -17 -38 12 -38 111 0 100 3 113
+                                    30 108 12 -3 16 -23 18 -107z m120 3 c2 -80 0 -104 -12 -113 -28 -24 -36 -2
+                                    -36 103 0 106 3 119 30 114 12 -3 16 -22 18 -104z m110 -3 c3 -106 -3 -126
+                                    -35 -114 -10 4 -13 31 -13 107 0 106 3 119 30 114 12 -3 16 -23 18 -107z m110
+                                    97 c18 -18 16 -192 -3 -208 -27 -23 -35 0 -35 104 0 116 7 135 38 104z m120
+                                    -97 c3 -106 -3 -126 -35 -114 -10 4 -13 31 -13 107 0 106 3 119 30 114 12 -3
+                                    16 -23 18 -107z"/>
+                                    </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav__list_item">
+                                <a class="nav__link-sub" href="espace.html"><span class="nav__link-title">Mon espace</span>
+                                    <svg class="menu__icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    width="155.000000pt" height="160.000000pt" viewBox="0 0 155.000000 160.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+
+                                    <g transform="translate(0.000000,160.000000) scale(0.100000,-0.100000)" stroke="none">
+                                    <path d="M700 1273 c0 -5 -88 -97 -195 -205 -107 -109 -195 -204 -195 -212 0
+                                    -7 6 -19 14 -25 12 -10 48 21 201 171 103 101 193 183 200 183 10 0 267 -229
+                                    379 -339 34 -32 58 -27 64 14 3 18 -10 37 -57 80 l-61 56 0 72 c0 44 4 72 11
+                                    72 6 0 9 10 7 23 -3 20 -9 22 -72 25 l-69 3 7 -42 7 -41 -53 43 c-29 24 -72
+                                    63 -97 87 -40 37 -91 57 -91 35z"/>
+                                    <path d="M552 968 l-172 -170 0 -224 0 -224 124 0 c104 0 125 3 130 16 3 9 6
+                                    105 6 215 l0 199 105 0 105 0 0 -215 0 -215 130 0 130 0 0 225 c0 124 -4 225
+                                    -9 225 -5 0 -51 39 -103 88 -52 48 -135 124 -184 169 l-90 81 -172 -170z"/>
+                                    <path d="M350 280 l0 -30 395 0 395 0 0 30 0 30 -395 0 -395 0 0 -30z"/>
+                                    </g>
+                                    </svg>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <button class="menu__burger" id="burger">
+                        <svg class="menu__icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="1200.000000pt" height="1200.000000pt" viewBox="0 0 1200.000000 1200.000000"
+                        preserveAspectRatio="xMidYMid meet">
+
+                        <g transform="translate(0.000000,1200.000000) scale(0.100000,-0.100000)" stroke="none">
+                        <path d="M1306 9730 c-39 -10 -108 -38 -155 -61 -71 -35 -103 -60 -182 -138
+                        -83 -84 -102 -109 -142 -191 -60 -126 -77 -200 -77 -340 0 -140 17 -214 77
+                        -340 40 -82 59 -108 142 -191 83 -83 109 -102 191 -142 178 -85 -322 -77 4843
+                        -77 4560 0 4605 0 4683 20 138 35 236 91 345 200 84 83 102 108 142 190 57
+                        119 77 209 77 346 0 133 -18 210 -77 334 -40 82 -58 107 -142 190 -101 100
+                        -170 144 -301 192 l-65 23 -4645 2 c-4511 2 -4647 1 -4714 -17z"/>
+                        <path d="M1306 6730 c-39 -10 -108 -38 -155 -61 -71 -35 -103 -60 -182 -138
+                        -83 -84 -102 -109 -142 -191 -60 -126 -77 -200 -77 -340 0 -140 17 -214 77
+                        -340 40 -82 59 -108 142 -191 83 -83 109 -102 191 -142 178 -85 -322 -77 4843
+                        -77 4560 0 4605 0 4683 20 138 35 236 91 345 200 84 83 102 108 142 190 57
+                        119 77 209 77 346 0 133 -18 210 -77 334 -40 82 -58 107 -142 190 -101 100
+                        -170 144 -301 192 l-65 23 -4645 2 c-4511 2 -4647 1 -4714 -17z"/>
+                        <path d="M1306 3730 c-39 -10 -108 -38 -155 -61 -71 -35 -103 -60 -182 -138
+                        -83 -84 -102 -109 -142 -191 -60 -126 -77 -200 -77 -340 0 -140 17 -214 77
+                        -340 40 -82 59 -108 142 -191 83 -83 109 -102 191 -142 178 -85 -322 -77 4843
+                        -77 4560 0 4605 0 4683 20 138 35 236 91 345 200 84 83 102 108 142 190 57
+                        119 77 209 77 346 0 133 -18 210 -77 334 -40 82 -58 107 -142 190 -101 100
+                        -170 144 -301 192 l-65 23 -4645 2 c-4511 2 -4647 1 -4714 -17z"/>
+                        </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="p-top">
+            <div class="p-top__image blog-bg">
+            </div>
+            <div class="container blog-title">
+              <h1 class="p-title-two">Notre blog</h1>
+            </div>
+        </section>
+        <section class="container blog">
+          <article class="blog__article col-12 col-md-8">
+            <h2 class="p-title-three">Le "Zéro Gaspillage"</h2>
+            <div class="blog__article_part">
+              <p class="blog__text">
+                Le concept de <strong class="text--blog-green">"zéro gaspillage"</strong> ou "zéro déchet" est très présent dans notre société actuelle. Il correspond à un mode de vie sain et plus respectueux de notre environnement.
+              </p>
+              <p class="blog__text"> 
+                Comment adopter la méthode du <span class="text--blog-green">"zéro gaspillage"</span> ?
+              </p>
+            </div>
+            <div class="blog__article_part p-hide" data-blog="gaspillage">
+              <p class="blog__text">         
+                Les chiffres clés liés au gaspillage alimentaire : 
+              </p>  
+              <p class="blog__text"> 
+                Ce sont <span class="text--blog-green">10 millions</span> de tonnes de déchets alimentaires 
+                qui sont générés, par an, en France.
+                <span class="text--blog-green">6 milliards</span> de mètres cubes d'eau, par an, utilisés pour
+                produire cette nourriture jetée.
+                24 % des rejets de carbone (<span class="text--blog-green">14 millions</span> de tonnes 
+                de CO2), soit l’équivalent des rejets de <span class="text--blog-green">7 millions</span> de 
+                voitures par an.
+                <i>(Source: WWF Association)</i>
+              </p>
+              <p class="blog__text">D'ici 2023, les collectivités européennes devront mettre en place un système de compostage individuel ou collectif. Ceci afin de réduire l'empreinte écologique liée aux déchets organiques.</p>
+            </div>
+            <button id="blog-btn-open" class="btn-link btn-blog col-6 col-md-4 col-lg-4" type="button" data-blog="gaspillage" data-btn="open">Lire la suite</button>
+            <figure class="col-12">
+              <img class="blog__img" src="src/img/blog/Manger_bio.jpg" alt="">
+            </figure>
+            <div class="blog__article_part p-hide" data-blog="gaspillage">
+              <h3 class="blog__article_subtitle">Les conséquences de la surconsommation alimentaire sur notre santé</h3>
+              <p class="blog__text">         
+                La notion de manger mieux est d'autant plus particulièrement importante pour notre santé.
+En effet, consommer des produits transformés est nocif pour notre organisme. L'obésité survient notamment lors de mauvaises pratiques alimentaires et engendre des maladies cardio-vasculaires.
+Effectivement c’est pourquoi il faut manger en plus petite quantité et privilégier la qualité des aliments. Prenons l'exemple du peuple japonais qui s'arrête de manger avant d'être complètement rassasié. 
+Cette population est remarquée pour sa longévité, elle compte le plus grand nombre de centenaires au monde.
+
+              </p>  
+              <h3 class="blog__article_subtitle">Les solutions pour appliquer le "zéro gaspillage »
+              </h3>
+              <p class="blog__text">         
+                Pour appliquer le <span class="text--blog-green">"zéro gaspillage"</span>, il faut privilégier les produits issus de l'agriculture biologique, raisonnée et locale. Optez pour les produits réutilisables, comme des lingettes en tissu lavable. Vous pouvez fabriquer vos produits vous-même pour une maison plus saine et ecofriendly. 
+
+              </p> 
+              <p class="blog__text">         
+                Achetez en quantité raisonnable et dirigez-vous vers des produits vendus en vrac. Utilisez des sacs en tissu ou autres bocaux pour conserver vos aliments.
+
+
+              </p> 
+              <p class="blog__text">         
+                Pour adopter la méthode <span class="text--blog-green">"zéro gaspi"</span>, nous proposons sur notre site des boxes alimentaires qui y contribuent. La lutte contre le gaspillage alimentaire est l'affaire de tous. La construction d'un monde meilleur, ça commence par nous.
+              </p> 
+              <p><i class="text--blog-green">
+                Publié le 15 avril à 16h.<br>
+                Laura</i></p>
+
+            </div>
+
+            <a class="btn-link btn-blog p-hide col-12 col-md-6" data-blog="gaspillage">Notre politique Zero gaspillage</a>
+          </article>
+
+          <article class="blog__article col-12  col-md-8">
+            <h2 class="p-title-three">Ce que le mode de vie végétarien veut dire…</h2>
+            <div class="blog__article_part">
+              <h3 class="blog__article_subtitle">Qu’est-ce qu’un végétarien ? 
+              </h3>
+              <p class="blog__text">
+                Le mode de vie végétarien suscite bien des fantasmes. Le végétarisme, selon Wikipédia, est une « pratique alimentaire qui exclut la consommation de chair animale ». Malgré cette définition plutôt claire, le concept de « végétarisme »reste incompris par beaucoup d’entre nous. 
+              </p>
+            </div>
+            <div class="blog__article_part  p-hide" data-blog="veggi">
+              <p class="blog__text">         
+                Les recherches Google : des inquiétudes à l’adhésion au mode de vie végétarien
+              </p>  
+              <p class="blog__text"> 
+                Les principales recherches dédiées à ce terme sont en effet des questions s’interrogeant sur le pourquoi du végétarisme (« végétarien, pour ou contre ? »), ou même sur le concept lui-même (« végétarien ou phytophage ?»).
+              </p>
+              <p class="blog__text">Malgré tout, la plupart des personnes qui recherchent ce terme sur les moteurs de recherche sont intéressées par ce mode de vie alternatif. En témoignent les recherches qui concernent la consommation de dérivés animaux tels que des œufs, les carences que peut comporter ce type de mode de vie… 
+              </p>
+              <p class="blog__text"> 
+                Le « veggie » est en effet très en vogue et est souvent assimilé au « vegan » qui diffère pourtant de ce dernier et refuse toute origine animale dans les produits consommés (chaussures, portefeuille…).  Pour résumer, le véganisme va plus loin que le simple fait de ne pas consommer de la viande, du poisson ou des fruits de mer.
+              </p>
+              <h3 class="blog__article_subtitle">La « veggie trend »
+              </h3>
+              <p class="blog__text">
+                Si le terme est autant en vogue de nos jours, il semblerait que cela soit lié à l’essor de l’écologie sur la scène mondiale. Les conférences liées au climat - la COP21 à Paris- et la prise de conscience globalisée des méfaits de la pollution peuvent expliquer ce phénomène. En consommant moins de viande, nous réduisons les émissions de polluants. Les industries agroalimentaires sont en effet le pilier d’une économie défavorable à l’écologie dans son ensemble. Le respect de toute vie sur cette planète est également pointé du doigt
+              </p>
+            </div>
+            <button id="blog-btn-open" class="btn-link btn-blog col-6 col-md-4 col-lg-4" type="button" data-blog="veggi" data-btn="open">Lire la suite</button>
+            <figure class="col-12">
+              <img class="blog__img" src="src/img/blog/Manger_vegetarien.jpg" alt="">
+            </figure>
+            <div class="blog__article_part  p-hide" data-blog="veggi">
+              <h3 class="blog__article_subtitle">Comment se caractérise le mode de vie végétarien ?
+              </h3>
+              <p class="blog__text">         
+                Les principaux marqueurs de ce mode de vie sont donc non seulement la nourriture mais également la pensée qui va avec : la sobriété, la résilience, un mode de vie plus raisonnable…  Nombre de restaurants proposent des formules végétariennes et le végétarisme n’est plus un mode de vie isolé. On peut être végétarien et sportif, végétarien et gourmet (aimer le fromage par exemple), végétarien et se soucier de sa santé (« végétarien et cancer »). Le veggie mainstreaming qui consiste à ramener les débats d’activistes dans le débat public global semble être, de fait, une réalité. Désormais, un végétarien peut trouver tous les produits qui l’intéressent au supermarché local, ou même les commander facilement sur Internet. 
+              </p>  
+              <h3 class="blog__article_subtitle">Les croyances associées à ce mode de vie
+              </h3>
+              <p class="blog__text">         
+                Si ce mode de vie n’est pas facilement saisissable, c’est qu’il est entouré de beaucoup de mythes. Ainsi, le mythe du végétarien famélique qui ne mange que des graines de soja perdure dans les consciences. Les nombreuses carences protéinées liées à l’absence de viande expliquent un régime alimentaire plus surveillé, avec des examens médicaux plus fréquents. Les carences alimentaires doivent être prises au sérieux quand elles concernent le bon fonctionnement des muscles, du cerveau et du corps humain dans son ensemble. Afin que des carences ne s’installent pas sur le long terme, les végétariens expérimentés connaissent de nombreux substituts protéinés naturels ou non. Cette connaissance approfondie de son propre régime alimentaire conduit souvent les végétariens à mieux maîtriser leur alimentation que le reste des personnes !
+              </p> 
+             
+              <p><i class="text--blog-green">
+                Publié le 23 avril à 16h<br>
+ Alexandra</i></p>
+
+            </div>
+
+            <a class="btn-link btn-blog p-hide col-12 col-md-6" data-blog="veggi">Nos menus végétariens</a>
+          </article>
+
+          <article class="blog__article col-12  col-md-8">
+            <h2 class="p-title-three">Faut-il calculer les calories ?</h2>
+            <div class="blog__article_part">
+              <p class="blog__text">
+                Le calcul des calories ingérées par jour est une tendance de ces dernières années dans le domaine de la nutrition et du bien-être. Pourtant, beaucoup disent que cette technique ne fonctionne absolument pas. 
+              </p>
+              <p class="blog__text">
+                Dans cet article, on va essayer d'avoir un regard critique et 
+définir une bonne fois pour toutes si <strong class="text--blog-green">le calcul des calories est 
+  une bonne stratégie d'alimentation ou non.</strong>
+              </p>
+            </div>
+            <div class="blog__article_part  p-hide" data-blog="calculer">
+              <p class="blog__text">         
+                On va commencer par définir ce qu’est une calorie.       
+              </p>  
+              <p class="blog__text"> 
+                D'habitude, le mot "calorie" est utilisée pour définir la quantité
+                d’énergie que notre corps ingère avec les aliments que l'on 
+               boit et mange. Mais elles peuvent être utilisées pour définir la 
+               quantité d'énergie dont notre corps a besoin pour exécuter les 
+               diverses tâches physiques.
+               
+              </p>
+              <p class="blog__text">Ainsi, les calories, c'est de l'énergie qu'on tire de la nourriture et utilise pour effectuer différentes tâches physiques. Ces tâches peuvent être divisées en trois groupes : métabolisme de base, digestion, activités physiques. Et si on mange plus de calories qu'on en dépense, on va les stocker en muscles ou en gras. Et si on mange moins de calories qu'on en a besoin tous les jours, on va perdre du poids.
+              </p>
+              <p class="blog__text"> 
+                C'est pourquoi, le total de l’apport en calories est l’élément le plus important pour contrôler le poids et ainsi la santé ; bien que <strong class="text--blog-green">compter chaque calorie ne soit pas forcément nécessaire.</strong>
+              </p>
+              <p class="blog__text">
+                Ainsi, si on veut perdre du poids, il faut impérativement créer un déficit en calories. Au contraire, si on veut reprendre du poids et réussir la prise de masse musculaire, il faut manger plus que notre corps brûle quotidiennement.
+              </p>
+            </div>
+            <button id="blog-btn-open" class="btn-link btn-blog col-6 col-md-4 col-lg-4" type="button" data-blog="calculer" data-btn="open">Lire la suite</button>
+            <figure class="col-12">
+              <img class="blog__img" src="src/img/blog/Calculer_les_calories.jpg" alt="">
+            </figure>
+            <div class="blog__article_part  p-hide" data-blog="calculer">
+              <p class="blog__text">         
+                Mais il ne faut pas oublier que les calories ne sont pas toutes pareilles. Il faut quand même faire la différence entre quantité et qualité, car les aliments qui contiennent le même nombre de calories peuvent avoir une qualité nutritionnelle inégale et ainsi avoir un impact très différent sur votre santé. À cause de leur composition variée au niveau chimique, les aliments peuvent affecter le métabolisme, les hormones et même la faim d'une façon différente.
+              </p>  
+              <p class="blog__text">         
+                Par exemple, les 100 calories d’une banane vont réduire votre faim plus efficacement que les mêmes 100 calories issues du chocolat. Car la quantité de banane qui contient 100 calories est bien plus importante que la quantité de chocolat qui en contient le même nombre. Ainsi votre corps va prendre plus de temps pour les digérer. <br>
+C’est pourquoi les calories et l'équilibre énergétique sont importants et indispensables pour garder sa ligne, à condition de faire attention à la qualité des aliments. Il vaut mieux privilégier une nourriture saine, riche en vitamines et éléments focaliser son attention sur les calories seules.
+
+
+              </p> 
+             
+              <p><i class="text--blog-green">
+                Publié le 30 avril à 16h <br>
+Ekaterina</i></p>
+
+            </div>
+
+            <a class="btn-link btn-blog p-hide col-12 col-md-6" data-blog="calculer">Notre calculateur de calories</a>
+          </article>
+
+          <article class="blog__article col-12  col-md-8">
+            <h2 class="p-title-three">La nutrition sportive</h2>
+            <div class="blog__article_part">
+              <h3 class="blog__article_subtitle">Mais qu’est-ce que c’est ?  
+              </h3>
+              <p class="blog__text">
+                De manière générale, une alimentation saine est fortement conseillée, mais lors d’une activité physique, elle est encore plus cruciale !
+              </p>
+              <p class="blog__text">
+                La nutrition sportive consiste à sélectionner les meilleurs aliments selon votre objectif sportif. Peu importe vos aspirations, leurs choix ont une grande importance. 
+              </p>
+            </div>
+            <div class="blog__article_part p-hide" data-blog="sport">
+              <p class="blog__text">         
+                Le choix de vos aliments vous permettra d’effectuer de meilleurs entraînements et d’améliorer vos performances.
+              </p>  
+              <p class="blog__text"> 
+                Pour imager notre organisme, on peut le comparer à celui d’une voiture. Les aliments contenant des protéines et des lipides pourraient représenter la carrosserie, les glucides seraient le carburant et les micronutriments, le moteur.
+              </p>
+              
+            </div>
+            <button id="blog-btn-open" class="btn-link btn-blog col-6 col-md-4 col-lg-4" type="button" data-blog="sport" data-btn="open">Lire la suite</button>
+            <figure class="col-12">
+              <img class="blog__img" src="src/img/blog/Nourriture_sportive.jpg" alt="">
+            </figure>
+            <div class="blog__article_part p-hide" data-blog="sport">
+              <h3 class="blog__article_subtitle">Ce qui est conseillé et déconseillé
+              </h3>
+              <p class="blog__text">         
+                Dans le but d’avoir les meilleurs résultats possibles, il est nécessaire de calculer vos apports caloriques, afin de répondre au mieux aux besoins de votre organisme. Pour une bonne diète, il est préférable de favoriser les produits BIO.
+              </p>  
+              <p class="blog__text">         
+                Lors de vos repas, veillez à manger des protéines, glucides et lipides. Les légumes ont un rôle majeur dans notre nutrition, ils permettent un équilibre acido-basique et fournissent de bons nutriments à notre organisme.
+              </p>  
+              <p class="blog__text">         
+                En revanche, la consommation d’alcool, sodas et sucrerie est déconseillée. Appelées <span class="text--blog-green">« calories vides ou creuses »</span>, elles ne contribuent pas au bon fonctionnement de notre organisme, au contraire, elles vous freineront dans votre progression !
+ 
+
+              </p> 
+              <h3 class="blog__article_subtitle">Bien s’organiser
+              </h3>
+              <p class="blog__text">         
+                Établissez un programme de nutrition sportive équilibrée et vous obtiendrez des résultats visibles et durables. 
+              </p> 
+              <p class="blog__text">         
+                Il est donc primordial de connaître ses besoins caloriques journaliers, quel que soit votre but. Ce besoin calorique représente la quantité d’énergie dont votre corps aura besoin. 
+              </p> 
+              <p class="blog__text">         
+                Un homme, d’environ 70 kg aura besoin de 2500kcal d’énergie pour stabiliser son poids tandis qu’ une femme , d’environ 60 kg aura besoin de 2000kcal d’énergie.
+              </p> 
+              <p class="blog__text">         
+                La nutrition sportive est la clé de toute votre progression ! Avec une bonne alimentation adaptée à vos objectifs, vous les  atteindrez ! Rappelez-vous que le bon programme c’est <strong class="text--blog-green">« 70 % d’alimentation et 30 % d'entraînement »</strong>.  
+              </p> 
+             
+              <p><i class="text--blog-green">
+                Publié le 7 mai à 16h <br>
+Rudy
+</i></p>
+
+            </div>
+            <a class="btn-link btn-blog p-hide col-12 col-md-6" data-blog="sport">Voir nos menus</a>
+          </article>
+        </section>
+
+    </main>
+    <footer class="p-footer">
+        <div class="container">
+            <div class="row p-row">
+                <div class="p-footer__element col-12 col-md-4">
+                    <p class="p-footer__title">À propos
+                    </p>
+                    <ul class="p-footer__list">
+                      <li class="p-footer__list-item"><a class="p-footer__link" href="#">Mentions légales</a></li>
+                      <li class="p-footer__list-item"><a class="p-footer__link" href="#">Conditions Générales de Vente</a></li>
+                      <li class="p-footer__list-item"><a class="p-footer__link" href="#">Politique de confidentialité</a></li>
+                    </ul>
+                  </div>
+                  <div class="p-footer__element col-12 col-md-4">
+                    <p class="p-footer__title">Les coulisses</p>
+                    <ul class="p-footer__list">
+                      <li class="p-footer__list-item"><a class="p-footer__link" href="#">Toutes nos recettes</a></li>
+                      <li class="p-footer__list-item"><a class="p-footer__link" href="#">Livraison</a></li>
+                      <li class="p-footer__list-item"><a class="p-footer__link" href="#">Comment ça marche</a></li>
+                      <li class="p-footer__list-item"><a class="p-footer__link" href="#">Nous contacter</a></li>
+                    </ul>
+                  </div>
+                  <div class="p-footer__element col-12 col-md-4">
+                    <p class="p-footer__title">Restons connectés
+                    </p>
+                    <ul class="p-footer__list">
+                      <li class="p-footer__list-item"><a class="p-footer__link" href="#">Notre </a>
+                      </li>
+                      <li class="p-footer__list-item">Nous sommes sur les réseaux sociaux:
+                        <ul class="social">
+                          <li class="social__item"><a href="#"><img src="src/img/footer/Insta_white.png" alt=""></a></li>
+                          <li class="social__item"><a href="#"><img src="src/img/footer/Facebook_white.png" alt=""></a></li>
+                          <li class="social__item"><a href="#"><img src="src/img/footer/Pinterest_white.png" alt=""></a></li>
+                          <li class="social__item"><a href="#"><img src="src/img/footer/YouTube_white.png" alt=""></a></li>
+
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/blog.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
