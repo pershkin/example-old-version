@@ -26,15 +26,12 @@
                         </ul>
                         <ul class="nav__list">
                             <li class="nav__list_item research">
-                                <form class="research__form p-none-show p-hide">
-                                    <input type="search">
-                                    <button id="">Search</button>
-                                </form>
-                                  <div class="research__icon menu__icon">
-                                    <span class="nav__link-title ">Rechercher</span>
-                                    <svg class="menu__icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                <input id="search-input" class="search-input" type="search">
+                                <div id="search-icon" class="research__icon menu__icon">
+                                    
+                                    <svg class="menu__icon menu-svg-search" version="1.0" xmlns="http://www.w3.org/2000/svg"
                                     width="155.000000pt" height="160.000000pt"
-                                     viewBox="0 0 155.000000 160.000000"
+                                        viewBox="0 0 155.000000 160.000000"
                                     preserveAspectRatio="xMidYMid meet">
 
                                     <g transform="translate(0.000000,160.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -46,12 +43,12 @@
                                     340 41 12 63 11 118 -5z"/>
                                     </g>
                                     </svg>
-                                  </div>
+                                    </div>
                             </li>
-                            <li class="nav__list_item">
+                            <li class="nav__list_item nav__list_item-mobile">
                                 <a class="nav__link-sub" href="panier.html">
                                     <span class="nav__link-title">Panier</span>
-                                    <svg class="menu__icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    <svg class="menu__icon menu-svg" version="1.0" xmlns="http://www.w3.org/2000/svg"
                                     width="155.000000pt" height="160.000000pt" viewBox="0 0 155.000000 160.000000"
                                     preserveAspectRatio="xMidYMid meet">
 
@@ -76,9 +73,9 @@
                                     </svg>
                                 </a>
                             </li>
-                            <li class="nav__list_item">
+                            <li class="nav__list_item  nav__list_item-mobile">
                                 <a class="nav__link-sub" href="espace.html"><span class="nav__link-title">Mon espace</span>
-                                    <svg class="menu__icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    <svg class="menu__icon menu-svg" version="1.0" xmlns="http://www.w3.org/2000/svg"
                                     width="155.000000pt" height="160.000000pt" viewBox="0 0 155.000000 160.000000"
                                     preserveAspectRatio="xMidYMid meet">
 
@@ -96,7 +93,7 @@
                                     </svg>
                                 </a>
                             </li>
-                            
+
                         </ul>
                     </nav>
                     <button class="menu__burger" id="burger">
@@ -190,47 +187,70 @@
          </section>
     </main>
     <footer class="p-footer">
-        <div class="container">
-            <div class="row p-row">
-                <div class="p-footer__element col-12 col-md-4">
-                    <p class="p-footer__title">À propos
-                    </p>
-                    <ul class="p-footer__list">
-                      <li class="p-footer__list-item"><a class="p-footer__link" href="#">Mentions légales</a></li>
-                      <li class="p-footer__list-item"><a class="p-footer__link" href="#">Conditions Générales de Vente</a></li>
-                      <li class="p-footer__list-item"><a class="p-footer__link" href="#">Politique de confidentialité</a></li>
-                    </ul>
-                  </div>
-                  <div class="p-footer__element col-12 col-md-4">
-                    <p class="p-footer__title">Les coulisses</p>
-                    <ul class="p-footer__list">
-                      <li class="p-footer__list-item"><a class="p-footer__link" href="#">Toutes nos recettes</a></li>
-                      <li class="p-footer__list-item"><a class="p-footer__link" href="#">Livraison</a></li>
-                      <li class="p-footer__list-item"><a class="p-footer__link" href="#">Comment ça marche</a></li>
-                      <li class="p-footer__list-item"><a class="p-footer__link" href="#">Nous contacter</a></li>
-                    </ul>
-                  </div>
-                  <div class="p-footer__element col-12 col-md-4">
-                    <p class="p-footer__title">Restons connectés
-                    </p>
-                    <ul class="p-footer__list">
-                      <li class="p-footer__list-item"><a class="p-footer__link" href="#">Notre </a>
-                      </li>
-                      <li class="p-footer__list-item">Nous sommes sur les réseaux sociaux:
-                        <ul class="social">
-                          <li class="social__item"><a href="#"><img src="src/img/footer/Insta_white.png" alt=""></a></li>
-                          <li class="social__item"><a href="#"><img src="src/img/footer/Facebook_white.png" alt=""></a></li>
-                          <li class="social__item"><a href="#"><img src="src/img/footer/Pinterest_white.png" alt=""></a></li>
-                          <li class="social__item"><a href="#"><img src="src/img/footer/YouTube_white.png" alt=""></a></li>
-                          
+        <div class="footer-wrapper footer-wrapper-orange">
+            <div class="container">
+                <div class="row p-row">
+                   
+                      <div class="p-footer__element col-12 col-md-7 col-lg-6">
+                        <p class="discount-title">10 € de réduction, ça vous dit?</p>
+                        <p class="discount-text">Recevez 10€ de réduction sur votre premiere commande quand vous vous inscrivez pour découvrir les idées recettes de nos chefs !</p>
+                      </div>
+                      <div class="p-footer__element col-12 col-md-5 col-lg-4">
+                        <div class="subscription">
+                            <input class="subscription-input" type="email" name="subscription-email" id="subscription-email">
+                            <button class="subscription-btn" type="button" id="subscription-btn">OK</button>
+                        </div>
+                        <div class="subscription-text">
+                            <p>*En m’inscrivant, je confirme avoir lu et compris <a href="" class="subscription-link">la politique de confidentialité.</a></p>
+                            <p>**Le bon de réduction est offert uniquement lors de la toute première inscription et ne pourra être utilisé qu’une seule fois, pour une commande d’un montant minimum de 50€.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="row p-row">
+                    <div class="p-footer__element col-12 col-md-4">
+                        <p class="p-footer__title">À propos
+                        </p>
+                        <ul class="p-footer__list">
+                          <li class="p-footer__list-item"><a class="p-footer__link" href="mention-legales.html">Mentions légales</a></li>
+                          <li class="p-footer__list-item"><a class="p-footer__link" href="conditions-generales-de-vente.html">Conditions Générales de Vente</a></li>
+                          <li class="p-footer__list-item"><a class="p-footer__link" href="politique-de-confidentialite.html">Politique de confidentialité</a></li>
                         </ul>
-                      </li>
-                    </ul>
-                  </div>
+                      </div>
+                      <div class="p-footer__element col-12 col-md-4">
+                        <p class="p-footer__title">Les coulisses</p>
+                        <ul class="p-footer__list">
+                          <li class="p-footer__list-item"><a class="p-footer__link" href="menu.html">Toutes nos recettes</a></li>
+                          <li class="p-footer__list-item"><a class="p-footer__link" href="livraison.html">Livraison</a></li>
+                          <li class="p-footer__list-item"><a class="p-footer__link" href="concept.html">Comment ça marche</a></li>
+                          <li class="p-footer__list-item"><a class="p-footer__link" href="contacts.html">Nous contacter</a></li>
+                        </ul>
+                      </div>
+                      <div class="p-footer__element col-12 col-md-4">
+                        <p class="p-footer__title">Restons connectés
+                        </p>
+                        <ul class="p-footer__list">
+                          <li class="p-footer__list-item"><a class="p-footer__link" href="blog.html">Notre blog</a>
+                          </li>
+                          <li class="p-footer__list-item">Nous sommes sur les réseaux sociaux:
+                            <ul class="social">
+                              <li class="social__item"><a href="instragram.com"><img src="src/img/footer/Insta_white.png" alt=""></a></li>
+                              <li class="social__item"><a href="facebook.com"><img src="src/img/footer/Facebook_white.png" alt=""></a></li>
+                              <li class="social__item"><a href="pinterest.com"><img src="src/img/footer/Pinterest_white.png" alt=""></a></li>
+                              <li class="social__item"><a href="youtunbe.com"><img src="src/img/footer/YouTube_white.png" alt=""></a></li>
+    
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
             </div>
         </div>
     </footer>
     <script src="js/calc.js"></script>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
