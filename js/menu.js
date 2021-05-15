@@ -3,7 +3,7 @@ const carte = [
     calories: 1500,
     veggi: false,
     icon: "",
-    img: "src/img/index/slider/vignette_1.jpg",
+    img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
     lunch: `Boeuf et coquillettes au fromag<br>
@@ -13,114 +13,10 @@ const carte = [
     Dessert : Fraises au vin<br>`,
   },
   {
-    calories: 3500,
+    calories: 1700,
     veggi: false,
     icon: "",
-    img: "src/img/index/slider/vignette_1.jpg",
-    title: `Menu 1500 calories Lundi`,
-    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
-    lunch: `Boeuf et coquillettes au fromag<br>
-    Dessert : Clafoutis aux cerises `,
-    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
-    Fromage : Cantal<br>
-    Dessert : Fraises au vin<br>`,
-  },
-  {
-    calories: 1500,
-    veggi: false,
-    icon: "",
-    img: "src/img/index/slider/vignette_1.jpg",
-    title: `Menu 1500 calories Lundi`,
-    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
-    lunch: `Boeuf et coquillettes au fromag<br>
-    Dessert : Clafoutis aux cerises `,
-    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
-    Fromage : Cantal<br>
-    Dessert : Fraises au vin<br>`,
-  },
-  {
-    calories: 3000,
-    veggi: false,
-    icon: "",
-    img: "src/img/index/slider/vignette_1.jpg",
-    title: `Menu 1500 calories Lundi`,
-    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
-    lunch: `Boeuf et coquillettes au fromag<br>
-    Dessert : Clafoutis aux cerises `,
-    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
-    Fromage : Cantal<br>
-    Dessert : Fraises au vin<br>`,
-  },
-  {
-    calories: 2300,
-    veggi: false,
-    icon: "",
-    img: "src/img/index/slider/vignette_1.jpg",
-    title: `Menu 1500 calories Lundi`,
-    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
-    lunch: `Boeuf et coquillettes au fromag<br>
-    Dessert : Clafoutis aux cerises `,
-    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
-    Fromage : Cantal<br>
-    Dessert : Fraises au vin<br>`,
-  },
-  {
-    calories: 2500,
-    veggi: false,
-    icon: "",
-    img: "src/img/index/slider/vignette_1.jpg",
-    title: `Menu 1500 calories Lundi`,
-    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
-    lunch: `Boeuf et coquillettes au fromag<br>
-    Dessert : Clafoutis aux cerises `,
-    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
-    Fromage : Cantal<br>
-    Dessert : Fraises au vin<br>`,
-  },
-  {
-    calories: 2900,
-    veggi: false,
-    icon: "",
-    img: "src/img/index/slider/vignette_1.jpg",
-    title: `Menu 1500 calories Lundi`,
-    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
-    lunch: `Boeuf et coquillettes au fromag<br>
-    Dessert : Clafoutis aux cerises `,
-    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
-    Fromage : Cantal<br>
-    Dessert : Fraises au vin<br>`,
-  },
-  {
-    calories: 2700,
-    veggi: false,
-    icon: "",
-    img: "src/img/index/slider/vignette_1.jpg",
-    title: `Menu 1500 calories Lundi`,
-    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
-    lunch: `Boeuf et coquillettes au fromag<br>
-    Dessert : Clafoutis aux cerises `,
-    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
-    Fromage : Cantal<br>
-    Dessert : Fraises au vin<br>`,
-  },
-  {
-    calories: 1500,
-    veggi: false,
-    icon: "",
-    img: "src/img/index/slider/vignette_1.jpg",
-    title: `Menu 1500 calories Lundi`,
-    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
-    lunch: `Boeuf et coquillettes au fromag<br>
-    Dessert : Clafoutis aux cerises `,
-    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
-    Fromage : Cantal<br>
-    Dessert : Fraises au vin<br>`,
-  },
-  {
-    calories: 1500,
-    veggi: false,
-    icon: "",
-    img: "src/img/index/slider/vignette_1.jpg",
+    img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
     lunch: `Boeuf et coquillettes au fromag<br>
@@ -133,7 +29,7 @@ const carte = [
     calories: 2000,
     veggi: false,
     icon: "",
-    img: "src/img/index/slider/vignette_1.jpg",
+    img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
     lunch: `Boeuf et coquillettes au fromag<br>
@@ -143,23 +39,62 @@ const carte = [
     Dessert : Fraises au vin<br>`,
   },
   {
-    calories: 1700,
-    veggi: true,
-    icon: "",
-    img: "src/img/index/slider/vignette_1.jpg",
-    title: `Menu 1500 calories Lundi`,
-    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
-    lunch: `Boeuf et coquillettes au fromag<br>
-    Dessert : Clafoutis aux cerises `,
-    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
-    Fromage : Cantal<br>
-    Dessert : Fraises au vin<br>`,
-  },
-  {
-    calories: 1800,
+    calories: 2200,
     veggi: false,
     icon: "",
-    img: "src/img/index/slider/vignette_1.jpg",
+    img: "src/img/index/slider/Salade_printanière.jpg",
+    title: `Menu 1500 calories Lundi`,
+    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
+    lunch: `Boeuf et coquillettes au fromag<br>
+    Dessert : Clafoutis aux cerises `,
+    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
+    Fromage : Cantal<br>
+    Dessert : Fraises au vin<br>`,
+  },
+  {
+    calories: 2500,
+    veggi: false,
+    icon: "",
+    img: "src/img/index/slider/Salade_printanière.jpg",
+    title: `Menu 1500 calories Lundi`,
+    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
+    lunch: `Boeuf et coquillettes au fromag<br>
+    Dessert : Clafoutis aux cerises `,
+    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
+    Fromage : Cantal<br>
+    Dessert : Fraises au vin<br>`,
+  },
+  {
+    calories: 3000,
+    veggi: false,
+    icon: "",
+    img: "src/img/index/slider/Salade_printanière.jpg",
+    title: `Menu 1500 calories Lundi`,
+    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
+    lunch: `Boeuf et coquillettes au fromag<br>
+    Dessert : Clafoutis aux cerises `,
+    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
+    Fromage : Cantal<br>
+    Dessert : Fraises au vin<br>`,
+  },
+  {
+    calories: 3200,
+    veggi: false,
+    icon: "",
+    img: "src/img/index/slider/Salade_printanière.jpg",
+    title: `Menu 1500 calories Lundi`,
+    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
+    lunch: `Boeuf et coquillettes au fromag<br>
+    Dessert : Clafoutis aux cerises `,
+    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
+    Fromage : Cantal<br>
+    Dessert : Fraises au vin<br>`,
+  },
+  {
+    calories: 3500,
+    veggi: false,
+    icon: "",
+    img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
     lunch: `Boeuf et coquillettes au fromag<br>
@@ -172,7 +107,72 @@ const carte = [
     calories: 1500,
     veggi: false,
     icon: "",
-    img: "src/img/index/slider/vignette_1.jpg",
+    img: "src/img/index/slider/Salade_printanière.jpg",
+    title: `Menu 1500 calories Lundi`,
+    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
+    lunch: `Boeuf et coquillettes au fromag<br>
+    Dessert : Clafoutis aux cerises `,
+    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
+    Fromage : Cantal<br>
+    Dessert : Fraises au vin<br>`,
+  },
+  {
+    calories: 2200,
+    veggi: false,
+    icon: "",
+    img: "src/img/index/slider/Salade_printanière.jpg",
+    title: `Menu 1500 calories Lundi`,
+    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
+    lunch: `Boeuf et coquillettes au fromag<br>
+    Dessert : Clafoutis aux cerises `,
+    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
+    Fromage : Cantal<br>
+    Dessert : Fraises au vin<br>`,
+  },
+  {
+    calories: 3500,
+    veggi: false,
+    icon: "",
+    img: "src/img/index/slider/Salade_printanière.jpg",
+    title: `Menu 1500 calories Lundi`,
+    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
+    lunch: `Boeuf et coquillettes au fromag<br>
+    Dessert : Clafoutis aux cerises `,
+    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
+    Fromage : Cantal<br>
+    Dessert : Fraises au vin<br>`,
+  },
+  {
+    calories: 3200,
+    veggi: true,
+    icon: "",
+    img: "src/img/index/slider/Salade_printanière.jpg",
+    title: `Menu 1500 calories Lundi`,
+    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
+    lunch: `Boeuf et coquillettes au fromag<br>
+    Dessert : Clafoutis aux cerises `,
+    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
+    Fromage : Cantal<br>
+    Dessert : Fraises au vin<br>`,
+  },
+  {
+    calories: 1500,
+    veggi: false,
+    icon: "",
+    img: "src/img/index/slider/Salade_printanière.jpg",
+    title: `Menu 1500 calories Lundi`,
+    breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
+    lunch: `Boeuf et coquillettes au fromag<br>
+    Dessert : Clafoutis aux cerises `,
+    dinner: `Oeufs au plat et Haricots verts mange-tout<br>
+    Fromage : Cantal<br>
+    Dessert : Fraises au vin<br>`,
+  },
+  {
+    calories: 2000,
+    veggi: false,
+    icon: "",
+    img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
     lunch: `Boeuf et coquillettes au fromag<br>
@@ -185,7 +185,7 @@ const carte = [
     calories: 1500,
     veggi: true,
     icon: "",
-    img: "src/img/index/slider/vignette_1.jpg",
+    img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
     lunch: `Boeuf et coquillettes au fromag<br>
@@ -207,7 +207,8 @@ if (rightMenu && (rightMenu >= 1300) && (rightMenu <= 3500)) {
   while(true) {
     if (carte.some(item => item.calories === rightMenu)) {
       filterValue = rightMenu
-     
+      
+      selectFilter.value = filterValue
       break
     } else {
       rightMenu += 100
@@ -227,15 +228,8 @@ function showMenu(filter) {
   if (!filter) {
       carte.forEach(item => createElement(item))
   } else {
-    selectFilter.value = filter
     let listFiltred = carte.filter(item => filter===item.calories)
-      if (listFiltred) {
-        listFiltred.forEach(item => createElement(item))
-      } else {
-        carteList.insertAdjacentHTML('beforeend', )
-      }
-      
-
+    listFiltred.forEach(item => createElement(item))
   }
 
 }

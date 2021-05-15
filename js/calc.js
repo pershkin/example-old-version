@@ -80,8 +80,10 @@ if (goal.value === 'perdre') {
     rightMenu = Math.round(result / 100) * 100 + 300
 } 
 
+let text = ''
+
 if (rightMenu < 1400 || rightMenu > 3500) {
-    let text = `
+    text = `
     <p class="text-result">Votre besoin calorique journalier est <br>
     <span class="text--green">${result} calories</span></p>
     <p class="text-result">Voici le menu parfait pour atteindre votre objectif:</p>
@@ -97,7 +99,7 @@ if (rightMenu < 1400 || rightMenu > 3500) {
     </div>
     `
 } else {
-    let text = `
+    text = `
     <p class="text-result">Votre besoin calorique journalier est <br>
     <span class="text--green">${result} calories</span></p>
     <p class="text-result">Voici le menu parfait pour atteindre votre objectif:</p>

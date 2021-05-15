@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("http://fonts.cdnfonts.com/css/rebellion-knight-personal-use-o");
+@font-face {
+  font-family: "Rebellion Knight Personal Use O";
+  src: url("../src/fonts/Rebellion Knight Personal Use O 400.otf");
+}
 html {
   font-size: 10px;
   box-sizing: border-box;
@@ -177,14 +181,12 @@ button {
 .p-footer {
   width: 100%;
   background-color: #0DA32B;
-  padding-top: 25px;
-  padding-bottom: 25px;
   color: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .p-footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 }
@@ -209,6 +211,9 @@ button {
   color: #ffffff;
   text-decoration: none;
 }
+.p-footer__link:hover {
+  color: #F99A00;
+}
 
 .social {
   margin-top: 10px;
@@ -216,6 +221,83 @@ button {
 .social__item {
   display: inline-block;
   margin-right: 15px;
+}
+
+.discount-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.discount-text {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.research {
+  position: relative;
+  order: 10;
+}
+
+.research__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media screen and (min-width: 992px) {
+  .research__icon {
+    position: static;
+  }
+}
+
+.search-input {
+  width: 150px;
+  line-height: 36px;
+  border-radius: 9999px;
+  border: 1px solid #0DA32B;
+  padding: 0 10px;
+  outline: none;
+}
+@media screen and (min-width: 992px) {
+  .search-input {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+}
+
+.subscription {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+.subscription-input {
+  width: 100%;
+  font-size: 1.5rem;
+  color: #F99A00;
+  line-height: 42px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 9999px;
+}
+.subscription-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #F99A00;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1px;
+}
+.subscription-text {
+  font-size: 1.2rem;
+}
+.subscription-link {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .menu {
@@ -251,31 +333,96 @@ button {
   fill: #F99A00;
 }
 
+.nav__link-title:hover {
+  color: #0DA32B;
+}
+
+.menu-svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  fill: #F99A00;
+  width: 40px;
+  height: 40px;
+}
+.menu-svg:hover {
+  fill: #0DA32B;
+}
+@media screen and (min-width: 992px) {
+  .menu-svg {
+    position: static;
+    transform: translateY(0);
+    fill: #0DA32B;
+    width: 50px;
+    height: 50px;
+  }
+  .menu-svg:hover {
+    fill: #F99A00;
+  }
+}
+
+.menu-svg-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  fill: #0DA32B;
+  width: 40px;
+  height: 40px;
+}
+.menu-svg-search:hover {
+  fill: #F99A00;
+}
+@media screen and (min-width: 992px) {
+  .menu-svg-search {
+    position: static;
+    width: 50px;
+    height: 50px;
+  }
+}
+
 .nav {
   width: 100%;
   justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   position: absolute;
   top: 100%;
   display: none;
   background-color: rgba(255, 255, 255, 0.9);
+  padding: 25px;
 }
 @media screen and (min-width: 992px) {
   .nav {
+    padding: 0;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     position: relative;
     top: 0;
     background-color: transparent;
   }
 }
+.nav .nav__list {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  .nav .nav__list {
+    display: block;
+  }
+}
 .nav__list_item {
+  display: flex;
   position: relative;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 992px) {
   .nav__list_item {
     display: inline-block;
+    margin-bottom: 0;
   }
 }
 .nav__link {
@@ -398,6 +545,13 @@ button {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 992px) {
+  .list-blocks__item {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 .list-blocks__item + .list-blocks__item {
   margin-top: 15px;
 }
@@ -447,6 +601,14 @@ button {
   }
 }
 
+.footer-wrapper {
+  width: 100%;
+  padding: 25px;
+}
+.footer-wrapper-orange {
+  background-color: #F99A00;
+}
+
 .reviews {
   text-align: left;
   display: flex;
@@ -478,7 +640,7 @@ button {
   width: 100%;
   display: block;
   padding: 15px;
-  text-align: center;
+  text-align: left;
   position: absolute;
   margin-bottom: 0;
   bottom: 0;
@@ -857,7 +1019,7 @@ button {
   margin-top: 15px;
 }
 .delivery__block-btns {
-  margin: 0 auto;
+  margin: 100px auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -874,7 +1036,6 @@ button {
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 50%;
 }
 .delivery__btn:hover {
   background-color: #ffffff;
@@ -1010,12 +1171,10 @@ button {
 }
 .confirmation__btn {
   background-color: #707070;
-  width: 50%;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .confirmation__btn {
-    width: 30%;
     margin-bottom: 25px;
   }
 }
@@ -1249,6 +1408,10 @@ button {
 
 .container {
   max-width: 968px;
+}
+
+.show-flex {
+  display: flex;
 }
 
 .p-show {
