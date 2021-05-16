@@ -2,7 +2,6 @@ const carte = [
   {
     calories: 1500,
     veggi: false,
-    icon: "",
     img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
@@ -15,7 +14,6 @@ const carte = [
   {
     calories: 1700,
     veggi: false,
-    icon: "",
     img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
@@ -28,7 +26,6 @@ const carte = [
   {
     calories: 2000,
     veggi: false,
-    icon: "",
     img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
@@ -41,7 +38,6 @@ const carte = [
   {
     calories: 2200,
     veggi: false,
-    icon: "",
     img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
@@ -53,8 +49,7 @@ const carte = [
   },
   {
     calories: 2500,
-    veggi: false,
-    icon: "",
+    veggi: true,
     img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
@@ -67,7 +62,6 @@ const carte = [
   {
     calories: 3000,
     veggi: false,
-    icon: "",
     img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
@@ -80,7 +74,6 @@ const carte = [
   {
     calories: 3200,
     veggi: false,
-    icon: "",
     img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
@@ -93,7 +86,6 @@ const carte = [
   {
     calories: 3500,
     veggi: false,
-    icon: "",
     img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
@@ -106,7 +98,6 @@ const carte = [
   {
     calories: 1500,
     veggi: false,
-    icon: "",
     img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
@@ -118,8 +109,7 @@ const carte = [
   },
   {
     calories: 2200,
-    veggi: false,
-    icon: "",
+    veggi: true,
     img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
@@ -132,7 +122,6 @@ const carte = [
   {
     calories: 3500,
     veggi: false,
-    icon: "",
     img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
@@ -145,7 +134,6 @@ const carte = [
   {
     calories: 3200,
     veggi: true,
-    icon: "",
     img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
@@ -158,7 +146,6 @@ const carte = [
   {
     calories: 1500,
     veggi: false,
-    icon: "",
     img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
@@ -171,7 +158,6 @@ const carte = [
   {
     calories: 2000,
     veggi: false,
-    icon: "",
     img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
@@ -184,7 +170,6 @@ const carte = [
   {
     calories: 1500,
     veggi: true,
-    icon: "",
     img: "src/img/index/slider/Salade_printanière.jpg",
     title: `Menu 1500 calories Lundi`,
     breakfast: `Bol de chicorée au lait avec 2 tranches de pain de campagne beurrées, Fruits de saison`,
@@ -200,6 +185,7 @@ const carte = [
 
 const carteList = document.querySelector('#carte-list')
 const selectFilter = document.querySelector('#filter-select') 
+const checkBoxFilter = document.querySelector('#filter-veggi')
 let rightMenu = +document.location.search.slice(1)
 let filterValue = ''
 
@@ -220,18 +206,27 @@ showMenu(filterValue)
 
 selectFilter.addEventListener('change', () => {
   showMenu(+selectFilter.value)
-  console.log(typeof selectFilter.value);
+})
+
+checkBoxFilter.addEventListener('change', () => {
+  carteList.innerHTML = ''
+  if (checkBoxFilter.checked) {
+    carte.filter(item => item.veggi).forEach(item => createElement(item))
+  } else {
+    console.log('qqqq');
+    showMenu(selectFilter.value)
+  }
 })
 
 function showMenu(filter) {
   carteList.innerHTML = ''
+  
   if (!filter) {
       carte.forEach(item => createElement(item))
   } else {
     let listFiltred = carte.filter(item => filter===item.calories)
     listFiltred.forEach(item => createElement(item))
   }
-
 }
 
 
@@ -252,3 +247,29 @@ function createElement(item) {
       </article>`
   carteList.insertAdjacentHTML('beforeend', element)
 }
+
+
+// selectFilter.addEventListener('change', () => {
+//   showMenu(+selectFilter.value)
+// })
+
+// checkBoxFilter.addEventListener('change', () => {
+//   carteList.innerHTML = ''
+//   if (checkBoxFilter.checked) {
+//     carte.filter(item => item.veggi).forEach(item => createElement(item))
+//   } else {
+//     console.log('qqqq');
+//     showMenu(selectFilter.value)
+//   }
+// })
+
+// function showMenu(filter) {
+//   carteList.innerHTML = ''
+  
+//   if (!filter) {
+//       carte.forEach(item => createElement(item))
+//   } else {
+//     let listFiltred = carte.filter(item => filter===item.calories)
+//     listFiltred.forEach(item => createElement(item))
+//   }
+// }
