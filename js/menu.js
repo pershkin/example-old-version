@@ -189,6 +189,7 @@ const checkBoxFilter = document.querySelector('#filter-veggi')
 let rightMenu = +document.location.search.slice(1)
 let filterValue = ''
 
+
 if (rightMenu && (rightMenu >= 1300) && (rightMenu <= 3500)) {
   while(true) {
     if (carte.some(item => item.calories === rightMenu)) {
@@ -211,16 +212,17 @@ selectFilter.addEventListener('change', () => {
 checkBoxFilter.addEventListener('change', () => {
   carteList.innerHTML = ''
   if (checkBoxFilter.checked) {
+    selectFilter.value = ''
     carte.filter(item => item.veggi).forEach(item => createElement(item))
   } else {
-    console.log('qqqq');
+    selectFilter.value = ''
     showMenu(selectFilter.value)
   }
 })
 
 function showMenu(filter) {
   carteList.innerHTML = ''
-  
+  checkBoxFilter.checked = false
   if (!filter) {
       carte.forEach(item => createElement(item))
   } else {
@@ -230,8 +232,12 @@ function showMenu(filter) {
 }
 
 
+
+
 function createElement(item) {
-  const element = `<article class="carte__item col-12 col-md-3" data-menu="${item.calories}">
+  const element = `<article class="carte__item col-12 col-md-3 veggi-block" data-menu="${item.calories}" >
+        
+       
         <figure class="carte__item_head">
           <img src="${item.img}" class="carte__img" alt="${item.title}">
           <figcaption class="carte__item_text "><h2 class="carte__item_title">${item.title}</h2><span class="carte__item_text-icon"></span></figcaption>
@@ -244,6 +250,7 @@ function createElement(item) {
         <h3 class="carte__item_subtitle">Diner:</h3>
         <p class="carte__item_subtext">${item.dinner}</p>
       </div> 
+      ${item.veggi ? `<div class="veggi-icon"></div>` : ''}
       </article>`
   carteList.insertAdjacentHTML('beforeend', element)
 }

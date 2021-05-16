@@ -84,19 +84,8 @@ let text = ''
 
 if (rightMenu < 1400 || rightMenu > 3500) {
     text = `
-    <p class="text-result">Votre besoin calorique journalier est <br>
-    <span class="text--green">${result} calories</span></p>
-    <p class="text-result">Voici le menu parfait pour atteindre votre objectif:</p>
-    <div class="col-12 col-lg-10 result-banner">
-    <div class="result-banner__img">
-        <img class="banner__img" src="src/img/calculatrice/Banner_Menu.jpg" alt="Banner ">
-    </div>
-    <article class="result-banner__text">
-        <h3 class="calculateur-title-result">Menu ${rightMenu} calories</h3>
-        <a class="btn-link btn-results" href="menu.html?${rightMenu}">Decouvrir</a>
-    </article>
+    <p class="result-wrong"><span class="result-wrong-title">Oops !</span> <br> Il semble que nous n'avons pas encore de menu pour vous, mais on travaille là-déssus ! Revenez nous voir ultérieurement</p>
 
-    </div>
     `
 } else {
     text = `

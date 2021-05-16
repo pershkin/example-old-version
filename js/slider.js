@@ -1,12 +1,15 @@
 $('#slider-menu').slick({
-  infinite: false,
-  draggable: false,
+  arrows: false,
+  infinite: true,
+  draggable: true,
   slidesToShow: 4,
   variableWidth: false,
   adaptiveHeight: false,
   slidesToScroll: 1,
   initialSlide: 3,
-
+  autoplay: true,
+  autoplaySpeed: 1500,
+  pauseOnHover: true, 
   responsive: [
     {
       breakpoint: 968,
@@ -40,7 +43,7 @@ $('#slider-review').slick({
   slidesToScroll: 1,
   initialSlide: 3,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 2000,
   pauseOnHover: true, 
   responsive: [
     {
