@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Healthy Food</title>
+</head>
+<body>
+  <header class="p-header">
+    <div class="container">
+        <div class="p-row row">
+            <div class="logo col-4 col-lg-2">
+                <a><img class="logo-img" src="src/img/logo.svg" alt="Logo Healthy Food"></a>
+            </div>
+            <div class="menu col-8 col-lg-10">
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__list_item"><a class="nav__link" href="concept.html">Le concept</a></li>
+                        <li class="nav__list_item"><a class="nav__link" href="nospanier.html">Nos paniers</a></li>
+                        <li class="nav__list_item"><a class="nav__link" href="menu.html">Votre menu</a></li>
+                    </ul>
+                    <ul class="nav__list">
+                        <li class="nav__list_item research">
+                            <input id="search-input" class="search-input" type="search">
+                            <div id="search-icon" class="research__icon menu__icon">
+                                
+                                <svg class="menu__icon menu-svg-search" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                width="155.000000pt" height="160.000000pt"
+                                    viewBox="0 0 155.000000 160.000000"
+                                preserveAspectRatio="xMidYMid meet">
+
+                                <g transform="translate(0.000000,160.000000) scale(0.100000,-0.100000)" stroke="none">
+                                <path d="M553 1199 c-61 -24 -132 -89 -164 -150 -31 -60 -38 -178 -15 -247 22
+                                -65 93 -145 160 -179 67 -34 153 -41 230 -19 l58 17 143 -140 c148 -145 165
+                                -156 220 -135 24 9 46 60 39 88 -3 14 -69 86 -145 161 l-140 137 22 45 c72
+                                149 1 341 -156 414 -75 36 -171 39 -252 8z m183 -94 c86 -25 144 -105 144
+                                -197 -1 -125 -85 -208 -211 -208 -63 0 -108 21 -153 70 -102 114 -48 295 102
+                                340 41 12 63 11 118 -5z"/>
+                                </g>
+                                </svg>
+                                </div>
+                        </li>
+                        <li class="nav__list_item nav__list_item-mobile">
+                            <a class="nav__link-sub" href="panier.html">
+                                <span class="nav__link-title">Panier</span>
+                                <svg class="menu__icon menu-svg" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                width="155.000000pt" height="160.000000pt" viewBox="0 0 155.000000 160.000000"
+                                preserveAspectRatio="xMidYMid meet">
+
+                                <g transform="translate(0.000000,160.000000) scale(0.100000,-0.100000)" stroke="none">
+                                <path d="M560 1054 c-83 -158 -91 -178 -77 -191 9 -9 22 -13 30 -10 9 3 48 70
+                                88 149 40 79 79 156 87 171 17 33 10 57 -16 57 -15 0 -42 -42 -112 -176z"/>
+                                <path d="M906 1215 c-3 -9 32 -89 84 -188 67 -129 94 -173 110 -175 40 -7 33
+                                28 -35 161 -37 72 -79 151 -92 175 -25 43 -56 55 -67 27z"/>
+                                <path d="M355 914 c-12 -12 -15 -32 -13 -78 3 -54 6 -62 28 -73 24 -11 28 -22
+                                44 -125 10 -62 22 -139 28 -170 l10 -58 344 0 344 0 5 23 c2 12 14 78 25 147
+                                28 174 30 180 45 180 40 0 60 104 29 148 -12 18 -25 22 -64 22 l-49 0 11 -30
+                                c8 -26 7 -34 -7 -50 -33 -37 -64 -22 -99 48 l-17 32 -217 0 -217 0 -25 -45
+                                c-27 -50 -49 -62 -81 -45 -18 10 -21 18 -16 51 l5 39 -48 0 c-31 0 -54 -6 -65
+                                -16z m233 -323 c2 -76 -1 -107 -10 -112 -28 -17 -38 12 -38 111 0 100 3 113
+                                30 108 12 -3 16 -23 18 -107z m120 3 c2 -80 0 -104 -12 -113 -28 -24 -36 -2
+                                -36 103 0 106 3 119 30 114 12 -3 16 -22 18 -104z m110 -3 c3 -106 -3 -126
+                                -35 -114 -10 4 -13 31 -13 107 0 106 3 119 30 114 12 -3 16 -23 18 -107z m110
+                                97 c18 -18 16 -192 -3 -208 -27 -23 -35 0 -35 104 0 116 7 135 38 104z m120
+                                -97 c3 -106 -3 -126 -35 -114 -10 4 -13 31 -13 107 0 106 3 119 30 114 12 -3
+                                16 -23 18 -107z"/>
+                                </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav__list_item  nav__list_item-mobile">
+                            <a class="nav__link-sub" href="espace.html"><span class="nav__link-title">Mon espace</span>
+                                <svg class="menu__icon menu-svg" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                width="155.000000pt" height="160.000000pt" viewBox="0 0 155.000000 160.000000"
+                                preserveAspectRatio="xMidYMid meet">
+
+                                <g transform="translate(0.000000,160.000000) scale(0.100000,-0.100000)" stroke="none">
+                                <path d="M700 1273 c0 -5 -88 -97 -195 -205 -107 -109 -195 -204 -195 -212 0
+                                -7 6 -19 14 -25 12 -10 48 21 201 171 103 101 193 183 200 183 10 0 267 -229
+                                379 -339 34 -32 58 -27 64 14 3 18 -10 37 -57 80 l-61 56 0 72 c0 44 4 72 11
+                                72 6 0 9 10 7 23 -3 20 -9 22 -72 25 l-69 3 7 -42 7 -41 -53 43 c-29 24 -72
+                                63 -97 87 -40 37 -91 57 -91 35z"/>
+                                <path d="M552 968 l-172 -170 0 -224 0 -224 124 0 c104 0 125 3 130 16 3 9 6
+                                105 6 215 l0 199 105 0 105 0 0 -215 0 -215 130 0 130 0 0 225 c0 124 -4 225
+                                -9 225 -5 0 -51 39 -103 88 -52 48 -135 124 -184 169 l-90 81 -172 -170z"/>
+                                <path d="M350 280 l0 -30 395 0 395 0 0 30 0 30 -395 0 -395 0 0 -30z"/>
+                                </g>
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <button class="menu__burger" id="burger">
+                    <svg class="menu__icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                    width="1200.000000pt" height="1200.000000pt" viewBox="0 0 1200.000000 1200.000000"
+                    preserveAspectRatio="xMidYMid meet">
+
+                    <g transform="translate(0.000000,1200.000000) scale(0.100000,-0.100000)" stroke="none">
+                    <path d="M1306 9730 c-39 -10 -108 -38 -155 -61 -71 -35 -103 -60 -182 -138
+                    -83 -84 -102 -109 -142 -191 -60 -126 -77 -200 -77 -340 0 -140 17 -214 77
+                    -340 40 -82 59 -108 142 -191 83 -83 109 -102 191 -142 178 -85 -322 -77 4843
+                    -77 4560 0 4605 0 4683 20 138 35 236 91 345 200 84 83 102 108 142 190 57
+                    119 77 209 77 346 0 133 -18 210 -77 334 -40 82 -58 107 -142 190 -101 100
+                    -170 144 -301 192 l-65 23 -4645 2 c-4511 2 -4647 1 -4714 -17z"/>
+                    <path d="M1306 6730 c-39 -10 -108 -38 -155 -61 -71 -35 -103 -60 -182 -138
+                    -83 -84 -102 -109 -142 -191 -60 -126 -77 -200 -77 -340 0 -140 17 -214 77
+                    -340 40 -82 59 -108 142 -191 83 -83 109 -102 191 -142 178 -85 -322 -77 4843
+                    -77 4560 0 4605 0 4683 20 138 35 236 91 345 200 84 83 102 108 142 190 57
+                    119 77 209 77 346 0 133 -18 210 -77 334 -40 82 -58 107 -142 190 -101 100
+                    -170 144 -301 192 l-65 23 -4645 2 c-4511 2 -4647 1 -4714 -17z"/>
+                    <path d="M1306 3730 c-39 -10 -108 -38 -155 -61 -71 -35 -103 -60 -182 -138
+                    -83 -84 -102 -109 -142 -191 -60 -126 -77 -200 -77 -340 0 -140 17 -214 77
+                    -340 40 -82 59 -108 142 -191 83 -83 109 -102 191 -142 178 -85 -322 -77 4843
+                    -77 4560 0 4605 0 4683 20 138 35 236 91 345 200 84 83 102 108 142 190 57
+                    119 77 209 77 346 0 133 -18 210 -77 334 -40 82 -58 107 -142 190 -101 100
+                    -170 144 -301 192 l-65 23 -4645 2 c-4511 2 -4647 1 -4714 -17z"/>
+                    </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+    <main>
+      <div class="blog-title  p-100">
+        
+        <h1 class="p-title-two">Politique de confidentialité</h1>
+        <p class="politique-sub">PROTECTION DES DONNEES PERSONNELLES</p>
+      </div> 
+        <section class="container blog"> 
+          <article class="blog__article col-12 col-md-8">
+            <h3 class="blog__article_subtitle">1. QUI TRAITE VOS DONNÉES ?</h3>
+            <p class="blog__text">         
+              La Société Cookbox – SA au capital social de 60.000 € – dont le siège social est 1, rue Rivoli – 75001 Paris, inscrite au Registre du Commerce et des Sociétés (RCS) de Paris sous le numéro 123 456 789 (<b>« Cookbox »</b>) propose un ensemble de services d’information, de conseils, d’animation de communautés d’utilisateurs, de commande et de livraison de paniers recettes en France, accessible à l’adresse Cookbox.com (le <b>« Service »</b>).
+            </p>
+            <p class="blog__text">         
+              Lors de l’utilisation du Service, Cookbox est amené à traiter des données personnelles portant sur les visiteurs, les clients et les prospects du Service (les <b>« Données Personnelles »</b>). À ce titre, Cookbox est responsable des traitements des données à caractère personnel vous concernant en relation avec les Services.
+            </p>
+            <p class="blog__text">         
+              Cette politique de confidentialité (la <b>« Politique »</b>) a pour objet d’informer les visiteurs, les clients et les prospects des Services de l’utilisation qui est faite par Cookbox des Données Personnelles les concernant, dans le respect de la loi n° 78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés modifiée (la <b>« Loi Informatique et Libertés »</b>), du Règlement Général sur la Protection des Données Personnelles 2016/679 (le <b>« RGPD »</b>), ainsi que la Directive 2002/58 <b>« e-Privacy »</b>, modifiée par la Directive 2009/136 (<b>« e-Privacy »</b>) (ensemble la <b>« Règlementation Applicable »</b>).
+            </p>
+            <h3 class="blog__article_subtitle">2. POUR QUELLES FINALITES COLLECTONS NOUS ET TRAITONS NOUS VOS DONNEES ?</h3>
+            <p class="blog__text">         
+              Cookbox collecte et traite les données vous concernant pour les finalités détaillées ci-dessous :
+
+            </p>
+            <p class="blog__text">         
+              <b>2.1 Sur le fondement de la nécessité contractuelle, vos données seront utilisées pour la gestion des commandes, de nos relations clients et pour nous permettre d’optimiser l’expérience utilisateur ou encore de répondre aux demandes et éventuelles réclamations de nos clients, notamment pour les traitements suivants :</b>
+              <ul class="blog__list">
+                <li>La création d’un compte ;</li>
+                <li>La gestion de l’envoi des newsletters et des sollicitations commerciales par voie électronique ;</li>
+                <li>La gestion de commandes du Service, leur suivi et leur facturation ;</li>
+                <li>Le recueil de vos commentaires et avis ;</li>
+                <li>La gestion des communications et le suivi de nos échanges notamment dans le cadre d’éventuels litiges (notamment via le service client accessible par exemple par téléphone, par messagerie instantanée de type tchat. Ces échanges peuvent être enregistrées à des fins d’amélioration du service) ;</li>
+                <li>La gestion de vos demandes liées à l’exercice des droits notamment d’accès, de rectification, et d’opposition, dont vous bénéficiez en application de la règlementation sur les données personnelles.</li>
+              </ul>
+            </p>        
+            <p class="blog__text">         
+              <b>2.1 Sur le fondement de la nécessité contractuelle, vos données seront utilisées pour la gestion des commandes, de nos relations clients et pour nous permettre d’optimiser l’expérience utilisateur ou encore de répondre aux demandes et éventuelles réclamations de nos clients, notamment pour les traitements suivants :</b>
+              <ul class="blog__list">
+                <li>La gestion du risque d’usage frauduleux de vos données ou des services auxquels vous avez accès via Cookbox. En fonction des résultats des contrôles effectués, Cookbox pourra prendre toutes mesures qu’il estime utiles pour la sécurisation de vos données et de nos systèmes d’informations utilisés pour les besoins de l’utilisation de Cookbox ainsi que pour la défense de ses intérêts. Le cas échéant, ces mesures pourront conduire à suspendre votre accès à Cookbox et à votre compte en ligne ;</li>
+                <li>La gestion des rappels produits initiés par les fournisseurs ou l’envoi de différentes informations ou documents s’y rapportant ;</li>
+                <li>L’établissement d’analyses ou de statistiques pour répondre à des enquêtes ou demandes menées par des organismes d’intérêts publics, ou des administrations, ou autorités administratives ou judiciaires (exemple en cas de risque alimentaire) ;</li>
+                <li>La gestion des éventuels contentieux, notamment lié au recouvrement des sommes que vous pourriez nous devoir, et la gestion des incidents de paiement ;</li>
+                <li>Le respect de nos obligations légales ou règlementaires applicables (ex: répondre à des demandes de l’administration fiscale).</li>
+        
+              </ul>
+            </p>
+            <p class="blog__text">         
+              <b>2.3 Vos données pourront également être utilisées, sur le fondement de l’intérêt légitime de Cookbox de promouvoir et d’améliorer ses services, pour réaliser des opérations relatives à la prospection commerciale, ou des études destinées à améliorer la connaissance client et les services que peut proposer Cookbox à ses clients. Vos données sont ainsi susceptibles d’être utilisées, dans le respect de vos droits garantis par la Réglementation Applicable :</b>
+              <ul class="blog__list">
+                <li>Pour vous envoyer des messages de promotion ou afficher des publicités personnalisés ou non, par voie postale ou électronique y compris par notifications mobiles, selon vos centres d’intérêts ou vos préférences ;</li>
+                <li>Pour analyser votre utilisation des services (notamment votre navigation en ligne et vos réactions aux emails), afin que nous puissions mieux vous connaître, apprécier l’intérêt que représentent les Services proposés ainsi que les messages que nous vous adressons et vous proposer des offres, contenus et des services adaptés à votre profil.</li>
+              </ul>
+            </p>
+            <p class="blog__text">         
+              Pour les traitements de données personnelles qui reposent sur votre consentement, celui-ci peut être rétracté à tout moment, sans que cela n’ait d’effet rétroactif.
+            </p>
+            <p class="blog__text">         
+              <b>2.4 Vos données sont susceptibles d’être utilisées pour la réalisation d’opérations techniques liées aux traitements de vos données personnelles, pour les besoins des finalités énoncées ci-dessus. Cela inclut, sous la réserve de vos droits définis par la Règlementation Applicable :</b>
+              <ul class="blog__list">
+                <li>Les opérations techniques liées à la rectification d’adresse ;</li>
+                <li>L’attribution d’un identifiant numérique lié à vos données, afin que nous puissions interagir avec vous via différents supports de communication numérique (sites internet et applications mobiles, réseaux sociaux) y compris pour vous adresser des publicités ciblées ;</li>
+                <li>Les opérations techniques, organisationnelles ou de cybersécurité liées à la détection d’anomalie et à la sécurisation de vos données ainsi que de nos systèmes d’information à partir desquels vos données sont traitées.</li>
+              </ul>
+            </p>
+            <h3 class="blog__article_subtitle">3. QUELLES DONNEES COLLECTONS - NOUS ?</h3>
+            <p class="blog__text">         
+              Les données traitées par Cookbox sont issues :
+              <ul class="blog__list">
+                <li>De votre inscription : données figurant sur le formulaire de souscription telles que vos nom, prénom, date de naissance, coordonnées ;</li>
+                <li>De votre utilisation de Service Cookbox : données permettant de vous identifier et de vous authentifier (logs de connexion, adresse IP), données relatives aux achats, aux lieux et moments de commande et d’achat, à votre parcours de navigation sur le site, aux dates et horaires de consultation du site, données de localisation ;</li>
+                <li>Des sites et applications mobiles édités par des entités tierces : informations relatives à la navigation ou aux publicités qui vous sont adressées ;</li>
+                <li>Des réseaux sociaux tels que Facebook, LinkedIn, Twitter : des échanges de données sont susceptibles d’intervenir entre Cookbox et les réseaux sociaux, par exemple lorsque vous consultez le Site en étant connecté à votre compte Facebook sur votre ordinateur. Si vous ne souhaitez pas de tels échanges, nous vous recommandons de vous déconnecter des réseaux sociaux avant de consulter le Site ou l’Application Cookbox.</li>
+              </ul>
+            </p>
+            <p class="blog__text">         
+              Lorsque nous demandons à nos partenaires de promouvoir nos Services, ces derniers ne peuvent nous communiquer vos Données Personnelles que si vous y avez consenti.
+            </p>
+            <h3 class="blog__article_subtitle">4. QUI SERA SUSCEPTIBLE D’ACCEDER A VOS DONNEES ?</h3>
+            <p class="blog__text">         
+              <b>Pour atteindre les finalités décrites ci-dessus et dans les limites nécessaires à la poursuite de ces finalités, vos données pourront être transmises à tout ou partie des destinataires suivants :</b>
+              <ul class="blog__list">
+                <li>Personnes habilitées au sein de Cookbox ;</li>
+                <li>Aux prestataires de paiement ;</li>
+                <li>Les prestataires et sous-traitants de Cookbox ;</li>
+                <li>Les annonceurs ou marques partenaires, mais dans ce cas nous ne leur transmettrons pas d’informations directement identifiantes ;</li>
+                <li>Les autorités administratives ou judiciaires le cas échéant dans le cadre de nos obligations légales ou pour nous permettre d’assurer la défense de nos droits et intérêts.</li>
+              </ul>
+            </p>
+            <h3 class="blog__article_subtitle">5. COMBIEN DE TEMPS CONSERVONS-NOUS VOS DONNÉES ?</h3>
+            <p class="blog__text">         
+              Les données collectées vous concernant seront conservées pour la durée nécessaire à l’accomplissement des finalités ci – dessus, augmentée du délai de la prescription légale.
+              </p>
+              <p class="blog__text">         
+                Ainsi, vos données de compte (inscription) seront conservées pendant toute la durée de votre adhésion. Elles pourront ensuite être conservées pendant 3 ans suivant le dernier contact de votre part, notamment pour nous permettre de vous adresser des sollicitations commerciales.
+              </p>
+              <p class="blog__text">         
+                Les données qui vous concernent sont susceptibles d’être conservées plus longtemps au titre d’obligations légales spécifiques ou au regard des délais de prescription légale applicables. À titre d’exemple, les données peuvent être conservées pendant :
+                <ul class="blog__list">
+                  <li>6 ans pour les documents fiscaux ;</li>
+                  <li>10 ans pour les pièces comptables ;</li>
+                  <li>Toute la durée des contentieux et jusqu’à épuisement des voies de recours.</li>
+                
+                </ul>
+              </p>
+              <h3 class="blog__article_subtitle">6. COMMENT VOS DONNEES SONT ELLES SECURISEES ?</h3>
+            
+            <p class="blog__text">         
+              Conformément à la Réglementation Applicable, Cookbox prend en compte la nature des données personnelles et les risques que présentent les traitements pour mettre en place les mesures techniques, physiques et organisationnelles appropriées pour préserver la sécurité et la confidentialité des Données Personnelles et empêcher qu’elles ne soient déformées, endommagées ou que des tiers non autorisés y aient accès.
+
+            </p>
+            <p class="blog__text">         
+              Conformément à la Réglementation Applicable, Cookbox prend en compte la nature des données personnelles et les risques que présentent les traitements pour mettre en place les mesures techniques, physiques et organisationnelles appropriées pour préserver la sécurité et la confidentialité des Données Personnelles et empêcher qu’elles ne soient déformées, endommagées ou que des tiers non autorisés y aient accès.
+
+            </p>
+            <p class="blog__text">         
+              Pour vous assurer que ces mesures préviennent efficacement l'accès non autorisé à vos informations personnelles, nous vous invitons à prendre connaissance des fonctionnalités de sécurité disponibles via votre navigateur. Il vous est recommandé d'utiliser un navigateur sécurisé pour envoyer vos informations personnelles sur les Sites.
+            </p>
+            <p class="blog__text">         
+              La plupart des navigateurs peuvent vous prévenir si vous passez de communications sûres à des communications non sûres, si vous recevez des informations d'identification de site non valides pour le site avec lequel vous communiquez, ou si vous envoyez des informations via une connexion non sécurisée. Cookbox vous recommande d'activer ces fonctions du navigateur pour vous assurer que vos communications sont sécurisées. Vous pouvez également contrôler l'URL du site que vous visitez (les URL sûres commencent par https:// plutôt que juste http://), ainsi que le symbole de sécurité de votre navigateur (un cadenas rouge ou vert dans Google Chrome, par exemple) pour savoir quand vous communiquez avec un serveur sécurisé. Vous pouvez également afficher les détails du certificat de sécurité du site auquel vous êtes connecté. Cookbox vous encourage à utiliser cette fonction pour vérifier la validité de tout site auquel vous vous connectez à l'aide de communications sécurisées.
+            </p>
+
+            <h3 class="blog__article_subtitle">7. VOS DONNÉES SONT ELLES TRANSFÉRÉES EN DEHORS DE L’UNION EUROPÉENNE ?</h3>
+            <p class="blog__text">         
+              Les différentes catégories de données collectées et traitées sont susceptibles d’être transmises à des sociétés prestataires situées dans des pays hors Union Européenne, par exemple dans le cadre de prestations informatiques ou de l’exploitation de données en lien avec les réseaux sociaux.
+            </p>
+          
+              <p class="blog__text">         
+                En ce cas, Cookbox s’assure que des mesures sont mises en place pour sécuriser tout transfert hors de l’Union européenne vers des pays non reconnus comme présentant des garanties d’adéquation suffisantes par la Commission européenne, par exemple par le mécanisme du Privacy Shield ou la signature de clauses contractuelles types définies par la Commission européenne.
+            </p>
+            <h3 class="blog__article_subtitle">8. QUELS SONT VOS DROITS ?</h3>
+            <p class="blog__text">         
+              Conformément à la règlementation sur la protection des données à caractère personnel, vous bénéficiez à tout moment et sans frais de droits d’accès, de rectification, d’effacement, liés à vos Données Personnelles, sous réserve des droits et libertés de tiers et des obligations qui incombent à Cookbox. Il est ici précisé qu’au titre du droit d’accès, Cookbox pourra demander le paiement de frais raisonnables basés sur les coûts administratifs pour toute copie supplémentaire des données à celle qui vous sera communiquée. Vous avez également le droit de définir des directives relatives au sort de vos données après votre décès.
+            </p>
+            <p class="blog__text">         
+              Vous disposez également dans certains cas d’un droit d’obtenir la limitation d’un traitement et d’un droit à la portabilité des Données Personnelles que vous avez pu fournir. Par ailleurs, vous pouvez demander à exercer votre droit d’opposition pour des raisons tenant à votre situation particulière, à un traitement de données personnelles vous concernant lorsque le traitement est fondé sur l’intérêt légitime du responsable de traitement, y compris le profilage. En cas d’exercice d’un tel droit d’opposition, Cookbox cessera le traitement sauf lorsqu’il existe des motifs légitimes et impérieux pour le traitement qui prévalent sur les intérêts et droits et les libertés de la personne concernée ou pour la constatation, l’exercice ou la défense d’un droit en justice. Vous pouvez également à tout moment vous opposer pour tout traitement lié à la prospection (y compris le profilage lié à une telle prospection), ou retirer votre consentement lorsque celui-ci constitue la base légale du traitement (le retrait de votre consentement sera sans incidence sur la licéité du traitement réalisé avant le retrait du consentement).
+
+            </p>
+            <p class="blog__text">         
+              <b>Pour exercer vos droits,</b> il vous suffit d’écrire à Cookbox à l’une des adresses suivantes : <br>
+              <a href="bonjour@cookbox.com">bonjour@cookbox.com</a> 
+              <b>OU</b><br>
+              Cookbox, 1, rue Rivoli - 75001 Paris <br>
+              en nous indiquant vos nom, prénom et votre adresse e-mail.
+            </p>
+            <p class="blog__text">         
+              Nous vous informons par ailleurs de l’existence de la liste d'opposition au démarchage téléphonique « Bloctel », gérée par Opposetel, sur laquelle vous pouvez vous inscrire gratuitement ici : <a href="https://conso.bloctel.fr/">https://conso.bloctel.fr/</a> .
+            </p>
+            <p class="blog__text">         
+              Dans l’hypothèse où nous ne parviendrions pas à répondre à vos demandes d’une manière qui vous satisfasse, vous pouvez également introduire une réclamation auprès d’une autorité de contrôle (en France, la CNIL : 3 Place de Fontenoy - TSA 80715 - 75334 PARIS CEDEX 07. Tél : 01 53 73 22 22).
+            </p>
+            <h3 class="blog__article_subtitle">9. COOKIES</h3>
+
+            <p class="blog__text">         
+              Pour permettre aux utilisateurs du Site de bénéficier des Services proposés Cookbox, le Site utilise des Cookies.
+            </p>
+            <p class="blog__text">         
+              Sauf si vous décidez de désactiver les cookies, vous acceptez que le Site puisse les utiliser. Vous pouvez à tout moment désactiver ces cookies et ce gratuitement à partir des possibilités de désactivation qui vous sont offertes et rappelées ci-après, sachant que cela peut réduire ou empêcher l’accessibilité à tout ou partie des Services proposés Services proposés par le Site.
+
+            </p>
+  
+            <h3 class="blog__article_subtitle">9.1 QU'EST CE QU'UN COOKIE ET SON UTILITÉ ?</h3>
+            <p class="blog__text">         
+              Lors de la consultation du Site, des informations relatives à la navigation de votre terminal (ordinateur, tablette, smartphone, etc.) peuvent être enregistrées dans des fichiers texte appelés "Cookies", installés sur votre navigateur. Les cookies vont être utilisés pour reconnaître votre navigateur pendant la durée de validité du cookie concerné.
+            </p>
+            <p class="blog__text">         
+              Seul l'émetteur du cookie concerné est susceptible de lire ou de modifier les informations qui y sont contenues.
+            </p>
+            <h3 class="blog__article_subtitle">9.2 QUELLES SONT LES FINALITÉS DES COOKIES UTILISÉS PAR COOKBOX ?</h3>
+            <p class="blog__text">         
+              Les Cookies de navigation permettent d’améliorer les performances des Services de Cookbox. Ces Cookies ne requièrent généralement pas l’accord des clients et prospects pour être déposés sur leur terminal. Ces Cookies permettent :
+              <ul class="blog__list">
+                <li>De mémoriser les préférences d'affichage de votre navigateur (langue utilisée, paramètres d'affichage, système d’exploitation utilisé, etc.) et d’adapter la présentation du Site, selon les matériels et logiciels de visualisation ou de lecture que comporte votre terminal et qui sont utilisés pour la navigation ;</li>
+                <li>De mémoriser les informations relatives, par exemple, à un formulaire que vous avez rempli ou à un service (inscription, accès à votre compte) ou une information que vous avez choisie (services souscrits, contenu de votre panier) ;</li>
+                <li>De vous permettre d'accéder à des espaces réservés et personnels du Site ou de nos Services, tels que votre compte personnel, grâce à des identifiants ou des données personnelles vous concernant antérieurement communiquées, vous permettant le cas échéant d’accéder à des contenus personnalisés.</li>
+              
+              </ul>
+            </p>
+            <p class="blog__text">         
+              Les Cookies statistiques nous permettent d’adapter les Services aux besoins des utilisateurs, en mesurant le nombre de visites, de pages consultées, l’activité des utilisateurs et leur fréquence de retour. Cela permet à Cookbox d’établir des statistiques d’analyse et de fréquentation à partir desquels les contenus des Services sont améliorés. Les résultats de ces analyses sont traités de manière anonyme et à des fins exclusivement statistiques.
+            </p>
+            <p class="blog__text">         
+              A titre d'exemple, le cookie analytique Realytics est un cookie de mesure d’audience et statistiques, de ce fait exempt de consentement selon la CNIL, utilisé pour mesurer la performance des campagnes TV des annonceurs sur le digital. En plus de la mesure, Realytics offre des solutions d’optimisation ou de mesure d’audience avancée qui peuvent nécessiter de recueillir un consentement libre, explicite et non équivoque de l’utilisateur. Realytics devient alors un fournisseur de données pour les partenaires de l’annonceur, qui doit s'assurer de la conformité du partenaire opérant. Dans les 2 cas, le cookie Realytics s’engage à respecter les données collectées et à ne collecter aucune donnée personnelle ou sensible et peut être désactivé depuis la page opt-out de Realytics.
+
+            </p>
+            <p class="blog__text">         
+              Les Cookies de publicité nous permettent de déterminer quelle publicité afficher en fonction de la navigation récente des utilisateurs sur le Site afin de limiter le nombre d’affichages de la publicité et pour aider à mesurer l’efficacité d’une campagne publicitaire.
+
+            </p>
+            <p class="blog__text">         
+              Les contenus publicitaires sont susceptibles de contenir des Cookies émis par des Tiers : l’annonceur à l’origine du contenu publicitaire concerné, une société tierce à l’annonceur (agence conseil en communication, société de mesure d’audience, prestataire de publicité ciblée, etc.) ou encore une régie publicitaire, qui a associé un Cookie au contenu publicitaire d’un annonceur.
+
+            </p>
+            <p class="blog__text">         
+              Cookbox n’est pas responsable des finalités, de l'utilisation ni de la conservation de Cookies par ces entreprises, qui sont soumises à leurs propres conditions d’utilisation.
+
+            </p>
+
+
+            <h3 class="blog__article_subtitle">9.3 LES COOKIES INTÉGRÉS À DES APPLICATIONS TIERCES
+            </h3>
+            <p class="blog__text">         
+              Nous sommes susceptibles d'inclure sur notre Site des applications informatiques émanant de tiers, qui vous permettent de partager des contenus de notre Site avec d'autres personnes ou de faire connaître à ces autres personnes vos consultations ou vos opinions concernant un contenu de notre Site. Tel est notamment le cas des boutons "Partager", "J'aime", issus de réseaux sociaux tels que Facebook, Twitter, Instagram, Youtube, etc.
+
+            </p>
+            <p class="blog__text">         
+              Le réseau social est susceptible de vous identifier grâce à ce bouton, même si vous ne l'avez pas utilisé lors de votre consultation de notre Site. Ce type de bouton applicatif peut permettre au réseau social concerné de suivre votre navigation sur notre Site, du seul fait que votre compte au réseau social ait été activé sur votre navigateur (session ouverte) durant votre navigation sur notre Site.
+
+            </p>
+            <p class="blog__text">         
+              Nous ne disposons d’aucun contrôle sur le processus employé par les réseaux sociaux pour collecter des informations relatives à votre navigation sur notre Site et associées aux données personnelles dont ils disposent. Nous vous recommandons de consulter les conditions d’utilisation de vos données sur ces réseaux sociaux pour connaissance les finalités d'utilisation, notamment publicitaires, les informations de navigation qu'ils peuvent recueillir grâce à ces boutons applicatifs. Il convient de vous assurer que les conditions d’utilisation de ces réseaux sociaux peuvent vous permettre d’encadrer et de restreindre l’utilisation de vos données par ces réseaux sociaux, notamment en paramétrant vos comptes d'utilisation auprès de ces derniers.
+
+            </p>
+
+            <h3 class="blog__article_subtitle">9.4 VOTRE GESTION ET UTILISATION DES COOKIES
+            </h3>
+            <p class="blog__text">         
+              Vous pouvez gérer et modifier à tout moment l’utilisation des cookies suivant les possibilités rappelées ci-après.
+            </p>
+            <p class="blog__text">         
+              Les paramétrages que vous effectuerez sont susceptibles de modifier votre navigation sur internet et vos conditions d’accès et d’utilisation de certains services de notre Site qui nécessite l’utilisation de cookies.
+            </p>
+            <p class="blog__text">         
+              Ainsi vous pouvez gérer vos cookies :
+              <ul class="blog__list">
+                <li>•	À partir de votre logiciel de navigation (1) ; ou</li>
+                <li>•	De plateformes interprofessionnelles (2) ; ou</li>
+                <li>•	Lorsque cela vous est proposé à partir d’un lien présent dans la liste ci-dessous.</li>
+              
+              </ul>
+            </p>
+            <p class="blog__text">         
+              1) Gestion de vos cookies à partir de votre logiciel de navigation : Vous pouvez configurer votre logiciel de navigation de manière à ce que des Cookies soient enregistrés dans votre terminal ou qu'ils soient rejetés, soit systématiquement, soit selon leur émetteur.
+
+            </p>
+            <p class="blog__text">         
+              Pour connaître les modalités applicables à la gestion des cookies stockés dans votre navigateur, nous vous invitons à consulter le menu d'aide de votre navigateur ainsi que la rubrique « Vos traces » du site de la CNIL (Commission Nationale de l’Informatique & des Libertés).
+
+            </p>
+            <p class="blog__text">         
+              2) Gestion en ligne de vos cookies à partir de plateformes interprofessionnelles : par exemple, la plateforme « Youronlinechoices », proposé par les professionnels de la publicité digitale regroupés au sein de l'association européenne EDAA (European Digital Advertising Alliance) et géré en France par l'Interactive Advertising Bureau France, ou toute autre plateforme qui propose ce type de services.
+            </p>
+            <p class="blog__text">         
+              Vous pourrez ainsi connaître les entreprises inscrites à cette plate-forme ou aux autres plateformes qui proposent ce service, et qui vous offrent la possibilité de refuser ou d'accepter les Cookies qu'elles utilisent pour adapter, selon qu’elles collectent, les publicités susceptibles d'être affichées sur votre navigateur.
+
+            </p>
+            <p class="blog__text">         
+              Cette plate-forme européenne « youronlinechoices.com », est partagée par des centaines de professionnels de la publicité sur Internet et constitue une interface centralisée vous permettant d'exprimer votre refus ou votre acceptation des Cookies tel que ci-dessus précisé.
+
+            </p>
+            <p class="blog__text">         
+              Cette procédure n'empêchera pas l'affichage de publicités sur les sites. Elle ne bloquera que les technologies qui permettent d'adapter des publicités à vos centres d'intérêts.
+
+            </p>
+            
+            
+            <h3 class="blog__article_subtitle">10. MODIFICATIONS DE LA POLITIQUE DE CONFIDENTIALITÉ
+            </h3>
+            <p class="blog__text">         
+              Cookbox est susceptible de modifier la Politique à tout moment, et vous invite donc à la consulter régulièrement, sur les Services que vous consultez ou utilisez. En cas de modification substantielle de la Politique concernant vos droits, Cookbox les portera à votre connaissance dans les meilleurs délais.
+
+            </p>
+
+            <div class="inner-btn 4">
+              <p class="text--under-btn">Vous avez des questions?</p>
+              <a class="btn-link btn-blog col-12 col-sm-8 col-md-6 col-lg-" href="contacts.html" >Contactez nous</a>
+            </div>
+          </article>
+
+        </section>
+
+    </main>
+    <footer class="p-footer">
+      <div class="footer-wrapper footer-wrapper-orange">
+          <div class="container">
+              <div class="row p-row">
+                 
+                    <div class="p-footer__element col-12 col-md-7 col-lg-6">
+                      <p class="discount-title">10 € de réduction, ça vous dit?</p>
+                      <p class="discount-text">Recevez 10€ de réduction sur votre premiere commande quand vous vous inscrivez pour découvrir les idées recettes de nos chefs !</p>
+                    </div>
+                    <div class="p-footer__element col-12 col-md-5 col-lg-4">
+                      <div class="subscription">
+                          <input class="subscription-input" type="email" name="subscription-email" id="subscription-email">
+                          <button class="subscription-btn" type="button" id="subscription-btn">OK</button>
+                      </div>
+                      <div class="subscription-text">
+                          <p>*En m’inscrivant, je confirme avoir lu et compris <a href="" class="subscription-link">la politique de confidentialité.</a></p>
+                          <p>**Le bon de réduction est offert uniquement lors de la toute première inscription et ne pourra être utilisé qu’une seule fois, pour une commande d’un montant minimum de 50€.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-wrapper">
+          <div class="container">
+              <div class="row p-row">
+                  <div class="p-footer__element col-12 col-md-4">
+                      <p class="p-footer__title">À propos
+                      </p>
+                      <ul class="p-footer__list">
+                        <li class="p-footer__list-item"><a class="p-footer__link" href="mention-legales.html">Mentions légales</a></li>
+                        <li class="p-footer__list-item"><a class="p-footer__link" href="conditions-generales-de-vente.html">Conditions Générales de Vente</a></li>
+                        <li class="p-footer__list-item"><a class="p-footer__link" href="politique-de-confidentialite.html">Politique de confidentialité</a></li>
+                      </ul>
+                    </div>
+                    <div class="p-footer__element col-12 col-md-4">
+                      <p class="p-footer__title">Les coulisses</p>
+                      <ul class="p-footer__list">
+                        <li class="p-footer__list-item"><a class="p-footer__link" href="menu.html">Toutes nos recettes</a></li>
+                        <li class="p-footer__list-item"><a class="p-footer__link" href="livraison.html">Livraison</a></li>
+                        <li class="p-footer__list-item"><a class="p-footer__link" href="concept.html">Comment ça marche</a></li>
+                        <li class="p-footer__list-item"><a class="p-footer__link" href="contacts.html">Nous contacter</a></li>
+                      </ul>
+                    </div>
+                    <div class="p-footer__element col-12 col-md-4">
+                      <p class="p-footer__title">Restons connectés
+                      </p>
+                      <ul class="p-footer__list">
+                        <li class="p-footer__list-item"><a class="p-footer__link" href="blog.html">Notre blog</a>
+                        </li>
+                        <li class="p-footer__list-item">Nous sommes sur les réseaux sociaux:
+                          <ul class="social">
+                            <li class="social__item"><a href="instragram.com"><img src="src/img/footer/Insta_white.png" alt=""></a></li>
+                            <li class="social__item"><a href="facebook.com"><img src="src/img/footer/Facebook_white.png" alt=""></a></li>
+                            <li class="social__item"><a href="pinterest.com"><img src="src/img/footer/Pinterest_white.png" alt=""></a></li>
+                            <li class="social__item"><a href="youtunbe.com"><img src="src/img/footer/YouTube_white.png" alt=""></a></li>
+  
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -129,7 +129,7 @@
     </header>
     <main>
         <h1 class="p-title-hidden">Healthy Food - Panier</h1>
-        <section class="p-wrapper container p-100">
+        <section data-section="panier" class="p-wrapper container p-100">
             <img class="panier_tunnel  col-12 col-md-10 col-lg-8" src="src/img/panier/Tunnel d'achat/Tunne_Panier.png" alt="">
             <h2 class="p-title-two" id="title-panier">Mon panier</h2>
             <div class="row p-row panier">
@@ -236,13 +236,13 @@
                 </table>
                 <p class="panier__amount_attention">Minium commande 20&#8364;</p>
                 
-                <button type="button" class="btn-link btn-link-block panier__amount_btn" id="panier-amount-btn">Valider</button>
+                <button data-btn="delivery" type="button" class="btn-link btn-link-block panier__amount_btn" id="panier-amount-btn">Valider</button>
             </div>
             </div>
             
         </section>
 
-        <section class="p-wrapper container p-100">
+        <section data-section="delivery" class="p-wrapper container p-100 p-hide">
             <img class="panier_tunnel  col-12 col-md-10 col-lg-8" src="src/img/panier/Tunnel d'achat/Tunnel_Livraison.png" alt="">
             <h2 class="p-title-two" id="title-panier">Livraison</h2>
             <div class="row p-row delivery">
@@ -266,15 +266,15 @@
                    
                 </div>
                 <div class="delivery__block-btns col-12 col-sm-8 col-md-12">
-                    <button type="button" class="delivery__date-btn btn-link btn-block delivery__button col-12 col-md-6">Modifier</button>
-                    <button type="button" class="delivery__btn-back btn-link btn-block col-6">Retour</button>
+                    <button data-btn="confirmation" type="button" class="delivery__date-btn btn-link btn-block delivery__button confirmation__btn-back  col-12 col-md-6">Valider</button>
+                    <button data-btn="panier" type="button" class="delivery__btn-back btn-link btn-block confirmation__btn-back  col-6 col-md-6">Retour</button>
                 </div>
             </div>
         </section>
 
                     
 
-        <section class="p-wrapper container p-100">
+        <section data-section="confirmation" class="p-wrapper container p-100 p-hide">
             <img class="panier_tunnel  col-12 col-md-10 col-lg-8" src="src/img/panier/Tunnel d'achat/Tunnel_Confirmationpng.png" alt="">
             <h2 class="p-title-two" id="title-panier">Confirmation</h2>
             <div class="row p-row confirmation">
@@ -318,10 +318,73 @@
                         <button type="button" class="confirmation__btn btn-link btn-block col-6 col-sm-4 col-md-2">Modifier</button>
                     </div>
                     <div class="delivery__block-btns col-12 col-sm-8 col-md-12">
-                        <button type="button" class="delivery__date-btn btn-link btn-block delivery__button confirmation__btn-back  col-12 col-md-6">Valider</button>
-                        <button type="button" class="delivery__btn-back btn-link btn-block confirmation__btn-back  col-6 col-md-6">Retour</button>
+                        <button data-btn="payment" type="button" class="delivery__date-btn btn-link btn-block delivery__button confirmation__btn-back  col-12 col-md-6">Valider</button>
+                        <button data-btn="delivery" type="button" class="delivery__btn-back btn-link btn-block confirmation__btn-back  col-6 col-md-6">Retour</button>
                     </div>
                 
+            </div>
+        </section>
+
+        <section data-section="payment" class="p-wrapper container p-hide  p-100">
+            <img class="panier_tunnel  col-12 col-md-10 col-lg-8" src="src/img/panier/Tunnel d'achat/Tunnel_ Paiement.png" alt="">
+            <h2 class="p-title-two" id="title-panier">Paiement</h2>
+            <div class=" payment col-12">
+                <div class="payment__icons col-12 col-sm-8 col-md-6">
+                    <img src="src/img/panier/Pictos/011-visa.png" alt="" class="payment__icons-img">
+                    <img src="src/img/panier/Pictos/007-american express.png" alt="" class="payment__icons-img">
+                    <img src="src/img/panier/Pictos/023-master card.png" alt="" class="payment__icons-img">
+                    <img src="src/img/panier/Pictos/026-paypal.png" alt="" class="payment__icons-img">
+                </div>
+                <form action="submit" class="payment-form col-12 col-sm-8 col-md-6">
+                    <label class="payment-form__label col-12" for="payment-card">
+                        Numéro de carte*
+                        <input class="payment-form__inputs" type="number" name="payment-card" id="payment-card" placeholder="#### #### #### ####">
+                    </label>
+                    
+
+                    <label class="payment-form__label col-12" for="payment-name">
+                        Nom*
+                        <input class="payment-form__inputs" type="text" name="payment-name" id="payment-name" placeholder="Nom">
+                    </label>
+                    
+                    <label class="payment-form__label col-5" for="payment-date">
+                        Expire le*
+                        <input class="payment-form__inputs" type="text" name="payment-dat" id="payment-date" placeholder="MM/AA">
+                    </label>
+                    
+                    <label class="payment-form__label col-5" for="payment-cvc">
+                        CVC*
+                        <input class="payment-form__inputs col-6" type="number" name="payment-cvc" id="payment-cvc" placeholder="123">
+                    </label>
+                    
+                    
+
+                </form>
+                    
+                    <div class="delivery__block-btns col-12 col-sm-8 col-md-12">
+                        <button type="button" class="delivery__date-btn btn-link btn-block delivery__button confirmation__btn-back  col-12 col-md-6" data-btn="end">Valider</button>
+                        <button type="button" class="delivery__btn-back btn-link btn-block confirmation__btn-back  col-6 col-md-6" data-btn="confirmation">Retour</button>
+                    </div>
+                <p class="payment-text">
+                    Vos données sont destinées à CookBox, ses prestataires et ses partenaires, afin de vous fournir les services que vous avez souscrit et pour vous faire part de nos offres adaptées à vos intérêts. Vous pourrez à tout moment vous désinscrire de nos offres envoyées par courrier électronique grâce à un moyen de désabonnement disponible dans chaque message. Pour en savoir plus sur vos droits, <a href="mention-legales.html" class="text--blog-green payment-link">cliquez ici</a> 
+En cliquant sur Valider et payer, je reconnais être majeur et avoir pris connaissance des <a href="conditions-generales-de-vente.html" class="text--blog-green payment-link">CGV</a> et je les accepte.
+                </p>
+            </div>
+        </section>
+
+        <section data-section="end" class="p-wrapper p-hide container p-100">
+            <img class="panier_tunnel  col-12 col-md-10 col-lg-8" src="src/img/panier/Tunnel d'achat/Tunnel_ Paiement.png" alt="">
+            <h2 class="p-title-two" id="title-panier">Merci pour votre commande!</h2>
+            <div class="payment col-12">
+                <p class="payment-end">
+                    Votre numéro de commande est <br> <span class="text--blog-green"><b>123456789</b></span> 
+                </p>
+                <p class="payment-end">
+                    Une confirmation a été envoyé à chloe. <br> <span class="text--blog-green"><b>lamy@gmail.com</b></span> 
+                </p>
+
+                    <a   class="btn-end btn-link btn-block col-12 col-sm-6 col-md-4 col-lg-2"  href="index.html">Voir mes commandes</a>
+
             </div>
         </section>
     </main>
@@ -390,6 +453,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/panier.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
